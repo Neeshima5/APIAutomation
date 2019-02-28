@@ -1,0 +1,443 @@
+{
+  "createdat": 1546239597,
+  "invoiceId": 48,
+  "modifiedat": 1546239736,
+  "orders": [
+    {
+      "channel_uuid": "84833be7-7c05-4ef8-b2c3-516cfa799404",
+      "charge_uuid": "1a69dd0e-6efd-4478-9558-56a0325753bd",
+      "chargesplit": [
+        {
+          "is_exclusive": false,
+          "taxsplit": [],
+          "type": 3,
+          "value": 4
+        }
+      ],
+      "comments": [],
+      "createdat": 1546239597,
+      "currency": "INR",
+      "customers": [],
+      "details": {
+        "chargedetails": [
+          {
+            "details": [
+              {
+                "inclusive": false,
+                "metric": 1,
+                "name": "service",
+                "scaling_factor": 100,
+                "tax_uuid": "0e53b5c7-fc2e-42ba-a14c-e72fa65dfb12",
+                "type": 3,
+                "value": 300
+              }
+            ],
+            "name": "ServiceCharge",
+            "uuid": "1a69dd0e-6efd-4478-9558-56a0325753bd"
+          }
+        ],
+        "ruledetails": [],
+        "taxdetails": [
+          {
+            "details": [],
+            "name": "GST 0",
+            "uuid": "0e53b5c7-fc2e-42ba-a14c-e72fa65dfb12"
+          },
+          {
+            "details": [
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "CGST",
+                "scaling_factor": 100,
+                "type": 8,
+                "value": 450
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "SGST",
+                "scaling_factor": 100,
+                "type": 7,
+                "value": 450
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "IGST",
+                "scaling_factor": 100,
+                "type": 9,
+                "value": 900
+              }
+            ],
+            "name": "TaxAutomation1",
+            "uuid": "ea8a6be0-ce84-4077-b039-f1e663a327d4"
+          }
+        ]
+      },
+      "device_id": 826925553,
+      "discard_reason": 0,
+      "discounts": [],
+      "employees": [
+        {
+          "name": "Neeshima",
+          "rank": 0,
+          "uuid": "aec758c6-c5ee-4c0b-8c66-ac19c4e62875"
+        }
+      ],
+      "inter_state": false,
+      "items": [
+        {
+          "chargesplit": [],
+          "comments": [],
+          "delete_reason": 0,
+          "description": "Vegetarian Pizza",
+          "hsc": null,
+          "ingredients": [
+            {
+              "ingitems": [
+                {
+                  "chargesplit": [],
+                  "comments": [],
+                  "delete_reason": 0,
+                  "description": "Spicy jalapenos",
+                  "hsc": null,
+                  "ingredients": [],
+                  "label_name": null,
+                  "line_item_id": 2,
+                  "machinecode": 0,
+                  "metric": 0,
+                  "modifiers": [],
+                  "parent_line_item_id": 0,
+                  "price": {
+                    "addonsprice": 0,
+                    "channel_uuid": "84833be7-7c05-4ef8-b2c3-516cfa799404",
+                    "chargeobject_uuid": null,
+                    "dis_percent": 0,
+                    "editedsellingprice": 0,
+                    "excl_dis": 0,
+                    "excl_discounted_price_per_qty": 0,
+                    "excl_item_dis_amt": 0,
+                    "excl_price_per_qty": 0,
+                    "excl_share_dis_amt": 0,
+                    "exclusive_selling_price": 0,
+                    "inc_item_dis_amt": 0,
+                    "inc_price_per_qty": 0,
+                    "inc_share_dis_amt": 0,
+                    "isEdited": false,
+                    "mrp": 0,
+                    "sellingprice": 1200,
+                    "taxobject_uuid": "ea8a6be0-ce84-4077-b039-f1e663a327d4",
+                    "total_excl_charge_per_qty": 0,
+                    "totalprice": 0
+                  },
+                  "product_code": "JLP022-380242590000",
+                  "product_name": "Jalapenos",
+                  "properties": [],
+                  "qty": 6000,
+                  "return_qty": 0,
+                  "sku": "004UEBEM7QZ00",
+                  "taxsplit": [],
+                  "unit_count": 1,
+                  "unit_qty": 6000,
+                  "user_properties": [],
+                  "variant_name": "Jalapenos"
+                },
+                {
+                  "chargesplit": [],
+                  "comments": [],
+                  "delete_reason": 0,
+                  "description": "Black olives",
+                  "hsc": null,
+                  "ingredients": [],
+                  "label_name": null,
+                  "line_item_id": 3,
+                  "machinecode": 0,
+                  "metric": 0,
+                  "modifiers": [],
+                  "parent_line_item_id": 0,
+                  "price": {
+                    "addonsprice": 0,
+                    "channel_uuid": "84833be7-7c05-4ef8-b2c3-516cfa799404",
+                    "chargeobject_uuid": null,
+                    "dis_percent": 0,
+                    "editedsellingprice": 0,
+                    "excl_dis": 0,
+                    "excl_discounted_price_per_qty": 0,
+                    "excl_item_dis_amt": 0,
+                    "excl_price_per_qty": 0,
+                    "excl_share_dis_amt": 0,
+                    "exclusive_selling_price": 0,
+                    "inc_item_dis_amt": 0,
+                    "inc_price_per_qty": 0,
+                    "inc_share_dis_amt": 0,
+                    "isEdited": false,
+                    "mrp": 0,
+                    "sellingprice": 1500,
+                    "taxobject_uuid": "ea8a6be0-ce84-4077-b039-f1e663a327d4",
+                    "total_excl_charge_per_qty": 0,
+                    "totalprice": 0
+                  },
+                  "product_code": "OLV783-1237947380000",
+                  "product_name": "Olives",
+                  "properties": [],
+                  "qty": 5000,
+                  "return_qty": 0,
+                  "sku": "004UEE6LCYG00",
+                  "taxsplit": [],
+                  "unit_count": 1,
+                  "unit_qty": 5000,
+                  "user_properties": [],
+                  "variant_name": "Olives"
+                }
+              ],
+              "name": "Veg Toppings"
+            }
+          ],
+          "label_name": null,
+          "line_item_id": 1,
+          "machinecode": 0,
+          "metric": 5,
+          "modifiers": [
+            {
+              "name": "please add fresh stuff"
+            }
+          ],
+          "parent_line_item_id": 0,
+          "price": {
+            "addonsprice": 2700,
+            "channel_uuid": "84833be7-7c05-4ef8-b2c3-516cfa799404",
+            "chargeobject_uuid": null,
+            "dis_percent": 0,
+            "editedsellingprice": 0,
+            "excl_dis": 0,
+            "excl_discounted_price_per_qty": 12700,
+            "excl_item_dis_amt": 0,
+            "excl_price_per_qty": 12700,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 0,
+            "inc_price_per_qty": 12700,
+            "inc_share_dis_amt": 0,
+            "isEdited": false,
+            "mrp": 0,
+            "sellingprice": 10000,
+            "taxobject_uuid": "ea8a6be0-ce84-4077-b039-f1e663a327d4",
+            "total_excl_charge_per_qty": 0,
+            "totalprice": 12711
+          },
+          "product_code": "PZVG40238",
+          "product_name": "Pizza Veg",
+          "properties": [],
+          "qty": 1000,
+          "return_qty": 0,
+          "sku": "004UEMI0NLE00",
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": 6
+            },
+            {
+              "type": 8,
+              "value": 6
+            }
+          ],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "Pizza Veg"
+        }
+      ],
+      "kots": [
+        {
+          "createdAt": 1546239710,
+          "emp_uuid": "aec758c6-c5ee-4c0b-8c66-ac19c4e62875",
+          "items": [
+            {
+              "delete_reason": 0,
+              "item_schedules": [
+                {
+                  "created_at": 0,
+                  "elapse_at": 0,
+                  "qty": 0,
+                  "schedule_status": 0,
+                  "schedule_type": 0
+                }
+              ],
+              "line_item_id": 1,
+              "main_status": 0,
+              "qty": 0,
+              "reason": "",
+              "sub_status": 0
+            }
+          ],
+          "kot_device_id": 826925553,
+          "kot_id": 0,
+          "kot_prefix": "neeshimatest1",
+          "logs": null,
+          "main_status": 1,
+          "print_count": 0,
+          "sub_status": 1
+        },
+        {
+          "createdAt": 1546239721,
+          "emp_uuid": "aec758c6-c5ee-4c0b-8c66-ac19c4e62875",
+          "items": [
+            {
+              "delete_reason": 0,
+              "item_schedules": [],
+              "line_item_id": 1,
+              "main_status": 1,
+              "qty": 1000,
+              "reason": "",
+              "sub_status": 1
+            }
+          ],
+          "kot_device_id": 826925553,
+          "kot_id": 1,
+          "kot_prefix": "neeshimatest1",
+          "logs": null,
+          "main_status": 1,
+          "print_count": 0,
+          "sub_status": 1
+        }
+      ],
+      "loyalty_partner_uuid": null,
+      "modifiedat": 1546239735,
+      "no_service_charge": false,
+      "online_transaction_id": 0,
+      "orderid": 67,
+      "otp": null,
+      "owner_device_id": 826925553,
+      "parent_uuid": null,
+      "partner_checkout": {
+        "payment_status": 0,
+        "qr": null,
+        "qr_createdAt": 0,
+        "qr_status": 4,
+        "trans_id": null
+      },
+      "partner_ref_number": null,
+      "partner_uuid": "e2f26f0e-bc4d-4c5d-a17b-74a177a49349",
+      "payments": [
+        {
+          "amount": 12715,
+          "card_num": "",
+          "checkout_uuid": null,
+          "conversion_factor": 10000,
+          "coupon_type": 0,
+          "createdat": 1546239732,
+          "currency": "INR",
+          "device_id": 826925553,
+          "edited_emp_uuid": null,
+          "email": null,
+          "method": 1,
+          "mode": 2,
+          "modifiedat": 1546239732,
+          "parent_amount": 0,
+          "parent_uuid": null,
+          "payment_init_uuid": null,
+          "payment_system_connected": false,
+          "phone_number": null,
+          "ref_id": "",
+          "reference_id": null,
+          "status": 4,
+          "trnx_reference": null,
+          "trnx_uuid": null,
+          "type": 1,
+          "uuid": "5b63abc6-b8d5-45b9-ba6d-b3fb817c3b34"
+        }
+      ],
+      "printcount": 0,
+      "refund_reason": 0,
+      "schedules": [],
+      "splitspec": null,
+      "status": 7,
+      "summary": {
+        "chargesplit": [
+          {
+            "is_exclusive": false,
+            "taxsplit": null,
+            "type": 3,
+            "value": 4
+          }
+        ],
+        "chargetaxsplit": null,
+        "comment": null,
+        "discountsplit": [],
+        "exclusiveChargesplit": [
+          {
+            "is_exclusive": true,
+            "taxsplit": null,
+            "type": 3,
+            "value": 4
+          }
+        ],
+        "exclusiveTaxsplit": [
+          {
+            "is_exclusive": true,
+            "type": 7,
+            "value": 6
+          },
+          {
+            "is_exclusive": true,
+            "type": 8,
+            "value": 6
+          }
+        ],
+        "grand_total": 12715,
+        "number_of_items": 1000,
+        "pending_items": 0,
+        "sub_total": 12700,
+        "taxsplit": [
+          {
+            "is_exclusive": false,
+            "type": 7,
+            "value": 6
+          },
+          {
+            "is_exclusive": false,
+            "type": 8,
+            "value": 6
+          }
+        ],
+        "total_charges": 4,
+        "total_discounts": 0,
+        "total_exclu_discounts": 0,
+        "total_order_charge_n_tax": 4,
+        "total_order_exclu_charge": 4,
+        "total_tax": 11
+      },
+      "tables": [
+        {
+          "guest_count": 0,
+          "is_active": true,
+          "merged_name": null,
+          "name": "Table4",
+          "status": 0,
+          "id": 7696
+        }
+      ],
+      "token_number": 0,
+      "type": 1,
+      "uuid": "8b42025b-3535-49dd-b2fd-faaee405db72"
+    }
+  ],
+  "prefix": "I7E4B2",
+  "summary": {
+    "grand_total": 12715,
+    "is_edited": false,
+    "is_refunded": false,
+    "order_count": 1,
+    "payment_balance": 0,
+    "sub_total": 12700,
+    "total_charge": 4,
+    "total_dis": 0,
+    "total_tax": 11
+  },
+  "type": 2,
+  "uuid": "47c9ba9d-98a1-46e1-bb89-bbaed9b9a1a7"
+}

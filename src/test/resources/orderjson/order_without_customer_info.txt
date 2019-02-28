@@ -1,0 +1,437 @@
+{
+  "uuid": "2502d089-a6c6-48c5-a1fb-86b5653e7d7f",
+  "invoiceId": 1,
+  "prefix": "I6YS6J",
+  "createdat": 1543826962,
+  "modifiedat": 1543833404,
+  "type": 2,
+  "summary": {
+    "order_count": 1,
+    "is_refunded": false,
+    "is_edited": false,
+    "sub_total": 15000,
+    "total_tax": 2100,
+    "total_charge": 4500,
+    "total_dis": 0,
+    "grand_total": 21600,
+    "payment_balance": 0
+  },
+  "orders": [
+    {
+      "uuid": "646a3c43-e3a5-4ad9-8120-627e5497facf",
+      "device_id": 1424831758,
+      "orderid": 1,
+      "owner_device_id": 1424831758,
+      "no_service_charge": false,
+      "parent_uuid": null,
+      "partner_ref_number": null,
+      "otp": null,
+      "online_transaction_id": 0,
+      "token_number": 0,
+      "currency": "INR",
+      "type": 1,
+      "printcount": 0,
+      "createdat": 1543826962,
+      "modifiedat": 1543833404,
+      "channel_uuid": "4d8623c1-42a7-4817-84c0-d4effe3aeeea",
+      "charge_uuid": "c7c8276a-f515-4916-baa1-bd71b6801c89",
+      "partner_uuid": null,
+      "loyalty_partner_uuid": null,
+      "status": 7,
+      "discard_reason": 0,
+      "refund_reason": 0,
+      "details": {
+        "taxdetails": [
+          {
+            "uuid": "e970b02f-1658-47a3-b006-985e8d052716",
+            "name": "ETax",
+            "details": [
+              {
+                "type": 8,
+                "name": "CGST",
+                "metric": 1,
+                "value": 500,
+                "inclusive": false,
+                "scaling_factor": 10000,
+                "children": []
+              },
+              {
+                "type": 9,
+                "name": "IGST",
+                "metric": 1,
+                "value": 1000,
+                "inclusive": false,
+                "scaling_factor": 10000,
+                "children": []
+              },
+              {
+                "type": 7,
+                "name": "SGST",
+                "metric": 1,
+                "value": 500,
+                "inclusive": false,
+                "scaling_factor": 10000,
+                "children": []
+              }
+            ]
+          },
+          {
+            "uuid": "eb7c7aae-eb98-4400-84ec-18a515a63347",
+            "name": "Tax",
+            "details": [
+              {
+                "type": 7,
+                "name": "SGST",
+                "metric": 1,
+                "value": 1000,
+                "inclusive": false,
+                "scaling_factor": 10000,
+                "children": []
+              }
+            ]
+          }
+        ],
+        "ruledetails": [],
+        "chargedetails": [
+          {
+            "uuid": "2bdad150-b6b1-452e-9234-a7cfd479c887",
+            "name": "Charge-Tax",
+            "details": [
+              {
+                "type": 2,
+                "name": "delivery",
+                "metric": 2,
+                "value": 1000,
+                "inclusive": false,
+                "scaling_factor": 10000,
+                "tax_uuid": "eb7c7aae-eb98-4400-84ec-18a515a63347"
+              }
+            ]
+          },
+          {
+            "uuid": "c7c8276a-f515-4916-baa1-bd71b6801c89",
+            "name": "Echarge",
+            "details": [
+              {
+                "type": 1,
+                "name": "packaging",
+                "metric": 1,
+                "value": 500,
+                "inclusive": false,
+                "scaling_factor": 10000,
+                "tax_uuid": "e970b02f-1658-47a3-b006-985e8d052716"
+              },
+              {
+                "type": 3,
+                "name": "service",
+                "metric": 1,
+                "value": 500,
+                "inclusive": false,
+                "scaling_factor": 10000,
+                "tax_uuid": "e970b02f-1658-47a3-b006-985e8d052716"
+              }
+            ]
+          }
+        ]
+      },
+      "discounts": [],
+      "summary": {
+        "sub_total": 15000,
+        "total_tax": 2100,
+        "total_discounts": 0,
+        "total_exclu_discounts": 0,
+        "total_charges": 4500,
+        "total_order_charge_n_tax": 1800,
+        "grand_total": 21600,
+        "comment": null,
+        "discountsplit": [],
+        "taxsplit": [
+          {
+            "type": 7,
+            "value": 1875,
+            "is_exclusive": false
+          },
+          {
+            "type": 8,
+            "value": 75,
+            "is_exclusive": false
+          },
+          {
+            "type": 9,
+            "value": 150,
+            "is_exclusive": false
+          }
+        ],
+        "exclusiveTaxsplit": [
+          {
+            "type": 7,
+            "value": 1875,
+            "is_exclusive": true
+          },
+          {
+            "type": 8,
+            "value": 75,
+            "is_exclusive": true
+          },
+          {
+            "type": 9,
+            "value": 150,
+            "is_exclusive": true
+          }
+        ],
+        "chargesplit": [
+          {
+            "type": 1,
+            "value": 750,
+            "is_exclusive": false,
+            "taxsplit": null
+          },
+          {
+            "type": 2,
+            "value": 3000,
+            "is_exclusive": false,
+            "taxsplit": null
+          },
+          {
+            "type": 3,
+            "value": 750,
+            "is_exclusive": false,
+            "taxsplit": null
+          }
+        ],
+        "chargetaxsplit": null,
+        "exclusiveChargesplit": [
+          {
+            "type": 1,
+            "value": 750,
+            "is_exclusive": true,
+            "taxsplit": null
+          },
+          {
+            "type": 2,
+            "value": 3000,
+            "is_exclusive": true,
+            "taxsplit": null
+          },
+          {
+            "type": 3,
+            "value": 750,
+            "is_exclusive": true,
+            "taxsplit": null
+          }
+        ],
+        "number_of_items": 3000,
+        "pending_items": 1
+      },
+      "items": [
+        {
+          "line_item_id": 1,
+          "qty": 3000,
+          "unit_count": 0,
+          "unit_qty": 0,
+          "sku": "00006E32HM700",
+          "hsc": null,
+          "variant_name": "burger",
+          "product_name": "burger",
+          "product_code": "bug01",
+          "machinecode": 0,
+          "metric": 5,
+          "delete_reason": 0,
+          "return_qty": 0,
+          "label_name": null,
+          "description": null,
+          "parent_line_item_id": 0,
+          "price": {
+            "channel_uuid": "4d8623c1-42a7-4817-84c0-d4effe3aeeea",
+            "sellingprice": 5000,
+            "exclusive_selling_price": 0,
+            "taxobject_uuid": "eb7c7aae-eb98-4400-84ec-18a515a63347",
+            "chargeobject_uuid": "2bdad150-b6b1-452e-9234-a7cfd479c887",
+            "isEdited": false,
+            "editedsellingprice": 0,
+            "totalprice": 19800,
+            "addonsprice": 0,
+            "mrp": 0,
+            "inc_price_per_qty": 5000,
+            "excl_price_per_qty": 5000,
+            "inc_share_dis_amt": 0,
+            "inc_item_dis_amt": 0,
+            "dis_percent": 0,
+            "excl_dis": 0,
+            "excl_share_dis_amt": 0,
+            "excl_item_dis_amt": 0
+          },
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": 1500
+            }
+          ],
+          "chargesplit": [
+            {
+              "type": 2,
+              "value": 3000,
+              "taxsplit": [
+                {
+                  "type": 7,
+                  "value": 300
+                }
+              ]
+            }
+          ],
+          "ingredients": [],
+          "properties": [],
+          "user_properties": [],
+          "modifiers": [],
+          "comments": []
+        }
+      ],
+      "payments": [
+        {
+          "uuid": "f20092a7-40b9-4ebc-a2dd-66b1d16d9790",
+          "device_id": 1424831758,
+          "status": 4,
+          "mode": 1,
+          "method": 1,
+          "type": 1,
+          "amount": 22000,
+          "parent_amount": 0,
+          "parent_uuid": null,
+          "card_num": "",
+          "ref_id": "",
+          "coupon_type": 0,
+          "createdat": 1543833376,
+          "modifiedat": 1543833376,
+          "conversion_factor": 10000,
+          "currency": "INR",
+          "reference_id": null,
+          "edited_emp_uuid": null,
+          "payment_init_uuid": null,
+          "email": null,
+          "phone_number": null,
+          "trnx_reference": null,
+          "trnx_uuid": null,
+          "checkout_uuid": null,
+          "payment_system_connected": false
+        },
+        {
+          "uuid": "c4d624e2-cd3d-4955-b1ee-c26b01c30e56",
+          "device_id": 1424831758,
+          "status": 4,
+          "mode": 1,
+          "method": 3,
+          "type": 2,
+          "amount": 400,
+          "parent_amount": 0,
+          "parent_uuid": null,
+          "card_num": "",
+          "ref_id": "",
+          "coupon_type": 0,
+          "createdat": 1543833403,
+          "modifiedat": 1543833403,
+          "conversion_factor": 10000,
+          "currency": "INR",
+          "reference_id": null,
+          "edited_emp_uuid": null,
+          "payment_init_uuid": null,
+          "email": null,
+          "phone_number": null,
+          "trnx_reference": null,
+          "trnx_uuid": null,
+          "checkout_uuid": null,
+          "payment_system_connected": false
+        }
+      ],
+      "kots": [
+        {
+          "kot_id": 0,
+          "kot_device_id": 1424831758,
+          "kot_prefix": "neeshimatest1",
+          "main_status": 1,
+          "sub_status": 1,
+          "print_count": 0,
+          "createdAt": 1543826965,
+          "emp_uuid": "e03ec039-44b5-488a-b51f-1928553afe3f",
+          "items": [
+            {
+              "line_item_id": 1,
+              "qty": 3000,
+              "main_status": 0,
+              "sub_status": 0,
+              "reason": "",
+              "delete_reason": 0,
+              "item_schedules": [
+                {
+                  "schedule_type": 6,
+                  "schedule_status": 0,
+                  "qty": 3000,
+                  "created_at": 1543826967,
+                  "elapse_at": 1543826967
+                }
+              ]
+            }
+          ],
+          "logs": null
+        }
+      ],
+      "customers": [],
+      "tables": [],
+      "employees": [
+        {
+          "uuid": "e03ec039-44b5-488a-b51f-1928553afe3f",
+          "name": "Anuj",
+          "rank": 0
+        }
+      ],
+      "schedules": [],
+      "chargesplit": [
+        {
+          "type": 1,
+          "value": 750,
+          "is_exclusive": false,
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": 38,
+              "is_exclusive": false
+            },
+            {
+              "type": 8,
+              "value": 38,
+              "is_exclusive": false
+            },
+            {
+              "type": 9,
+              "value": 75,
+              "is_exclusive": false
+            }
+          ]
+        },
+        {
+          "type": 3,
+          "value": 750,
+          "is_exclusive": false,
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": 38,
+              "is_exclusive": false
+            },
+            {
+              "type": 8,
+              "value": 38,
+              "is_exclusive": false
+            },
+            {
+              "type": 9,
+              "value": 75,
+              "is_exclusive": false
+            }
+          ]
+        }
+      ],
+      "splitspec": null,
+      "partner_checkout": null
+    }
+  ]
+}

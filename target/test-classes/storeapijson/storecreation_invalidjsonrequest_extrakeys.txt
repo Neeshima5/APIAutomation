@@ -1,0 +1,61 @@
+{
+  "phone_number": "7787879999",
+  "login_credentials": {
+    "web_password": "",
+    "device_password": ""
+  },
+  "store": {
+    "branch": {
+      "paytm_mall_dummy_pid": "",
+      "paytm_mall_warehouse_id": "",
+      "address": {
+        "city": "",
+        "state": "",
+        "street": "  ",
+        "addr2": " ",
+        "zip": "677999",
+        "addr1": "",
+        "country": "",
+        "near": ""
+      },
+      "timezone": "Asia/Kolkata",
+      "phone_numbers": [
+        "8876346523"
+      ],
+      "type": "Pharma",
+      "gst": "03AADCB2230M1Z3",
+      "name": "branchtest12341456",
+      "paytm_merchant_id": "",
+      "paytm_mall_merchant_id": "",
+      "affiliate": "paytm",
+      "invoice_header_line_1": "",
+      "invoice_header_line1": "",
+      "invoice_footer_line_1": "",
+      "invoice_footer_line1": ""
+    },
+    "name": "storetest12345678901456",
+    "address": {
+      "city": "",
+      "state": "",
+      "street": "",
+      "addr2": "",
+      "zip": "",
+      "addr1": "",
+      "country": "",
+      "near": ""
+    }
+  },
+  "name": "ownertest12342456",
+  "registered_address": {
+    "city": "",
+    "state": "",
+    "street": "",
+    "addr2": "",
+    "zip": "999000",
+    "addr1": "",
+    "country": "",
+    "near": ""
+  },
+  "email": "ownertest123456456@gmail.com",
+  "gst": "03AADCB2230M1Z3"
+}

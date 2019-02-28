@@ -1,0 +1,428 @@
+{
+  "createdat": 1545979018,
+  "invoiceId": 43,
+  "modifiedat": 1545979127,
+  "orders": [
+    {
+      "channel_uuid": "2953942b-ef8d-4467-8e16-c3bcc23aeca6",
+      "charge_uuid": null,
+      "chargesplit": [],
+      "comments": [],
+      "createdat": 1545979018,
+      "currency": "INR",
+      "customers": [],
+      "details": {
+        "chargedetails": [
+          {
+            "details": [
+              {
+                "inclusive": true,
+                "metric": 1,
+                "name": "other",
+                "scaling_factor": 100,
+                "tax_uuid": "0e53b5c7-fc2e-42ba-a14c-e72fa65dfb12",
+                "type": 4,
+                "value": 200
+              }
+            ],
+            "name": "InclusiveCharge",
+            "uuid": "3aaacf59-4481-4416-9e29-9bf3ff70b925"
+          }
+        ],
+        "ruledetails": [],
+        "taxdetails": [
+          {
+            "details": [],
+            "name": "GST 0",
+            "uuid": "0e53b5c7-fc2e-42ba-a14c-e72fa65dfb12"
+          },
+          {
+            "details": [
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "CGST",
+                "scaling_factor": 100,
+                "type": 8,
+                "value": 450
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "SGST",
+                "scaling_factor": 100,
+                "type": 7,
+                "value": 450
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "IGST",
+                "scaling_factor": 100,
+                "type": 9,
+                "value": 900
+              }
+            ],
+            "name": "TaxAutomation1",
+            "uuid": "ea8a6be0-ce84-4077-b039-f1e663a327d4"
+          },
+          {
+            "details": [
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "CGST",
+                "scaling_factor": 100,
+                "type": 8,
+                "value": 250
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "IGST",
+                "scaling_factor": 100,
+                "type": 9,
+                "value": 450
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "SGST",
+                "scaling_factor": 100,
+                "type": 7,
+                "value": 250
+              }
+            ],
+            "name": "TaxAutomation2",
+            "uuid": "30259179-9ae5-4a02-bde8-f36b4727bfa4"
+          }
+        ]
+      },
+      "device_id": 826925553,
+      "discard_reason": 0,
+      "discounts": [],
+      "employees": [
+        {
+          "name": "Neeshima",
+          "rank": 0,
+          "uuid": "aec758c6-c5ee-4c0b-8c66-ac19c4e62875"
+        }
+      ],
+      "inter_state": false,
+      "items": [
+        {
+          "chargesplit": [],
+          "comments": [],
+          "delete_reason": 0,
+          "description": null,
+          "hsc": null,
+          "ingredients": [],
+          "label_name": null,
+          "line_item_id": 1,
+          "machinecode": 0,
+          "metric": 3,
+          "modifiers": [],
+          "parent_line_item_id": 0,
+          "price": {
+            "addonsprice": 0,
+            "channel_uuid": "2953942b-ef8d-4467-8e16-c3bcc23aeca6",
+            "chargeobject_uuid": null,
+            "dis_percent": 0,
+            "editedsellingprice": 0,
+            "excl_dis": 0,
+            "excl_discounted_price_per_qty": 9000,
+            "excl_item_dis_amt": 0,
+            "excl_price_per_qty": 9000,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 0,
+            "inc_price_per_qty": 9000,
+            "inc_share_dis_amt": 0,
+            "isEdited": false,
+            "mrp": 0,
+            "sellingprice": 9000,
+            "taxobject_uuid": "ea8a6be0-ce84-4077-b039-f1e663a327d4",
+            "total_excl_charge_per_qty": 0,
+            "totalprice": 9008
+          },
+          "product_code": "BRP480",
+          "product_name": "Basmati Rice",
+          "properties": [],
+          "qty": 0,
+          "return_qty": 0,
+          "sku": "004UETPR4KD00",
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": 4
+            },
+            {
+              "type": 8,
+              "value": 4
+            }
+          ],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "Basmati Rice"
+        },
+        {
+          "chargesplit": [],
+          "comments": [],
+          "delete_reason": 0,
+          "description": null,
+          "hsc": null,
+          "ingredients": [],
+          "label_name": null,
+          "line_item_id": 2,
+          "machinecode": 0,
+          "metric": 3,
+          "modifiers": [],
+          "parent_line_item_id": 0,
+          "price": {
+            "addonsprice": 0,
+            "channel_uuid": "2953942b-ef8d-4467-8e16-c3bcc23aeca6",
+            "chargeobject_uuid": null,
+            "dis_percent": 0,
+            "editedsellingprice": 0,
+            "excl_dis": 0,
+            "excl_discounted_price_per_qty": 6000,
+            "excl_item_dis_amt": 0,
+            "excl_price_per_qty": 6000,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 0,
+            "inc_price_per_qty": 6000,
+            "inc_share_dis_amt": 0,
+            "isEdited": false,
+            "mrp": 0,
+            "sellingprice": 6000,
+            "taxobject_uuid": "30259179-9ae5-4a02-bde8-f36b4727bfa4",
+            "total_excl_charge_per_qty": 0,
+            "totalprice": 6003
+          },
+          "product_code": "KERMT123",
+          "product_name": "Red Boiled Rice",
+          "properties": [],
+          "qty": 1000,
+          "return_qty": 0,
+          "sku": "004UEQQC55F00",
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": 2
+            },
+            {
+              "type": 8,
+              "value": 2
+            }
+          ],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "Red Boiled Rice"
+        },
+        {
+          "chargesplit": [
+            {
+              "taxsplit": [],
+              "type": 4,
+              "value": 24
+            }
+          ],
+          "comments": [],
+          "delete_reason": 0,
+          "description": "Boiled rice - White - Bag of 20kg",
+          "hsc": null,
+          "ingredients": [],
+          "label_name": null,
+          "line_item_id": 3,
+          "machinecode": 0,
+          "metric": 7,
+          "modifiers": [],
+          "parent_line_item_id": 0,
+          "price": {
+            "addonsprice": 0,
+            "channel_uuid": "2953942b-ef8d-4467-8e16-c3bcc23aeca6",
+            "chargeobject_uuid": "3aaacf59-4481-4416-9e29-9bf3ff70b925",
+            "dis_percent": 0,
+            "editedsellingprice": 0,
+            "excl_dis": 0,
+            "excl_discounted_price_per_qty": 119976,
+            "excl_item_dis_amt": 0,
+            "excl_price_per_qty": 119976,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 0,
+            "inc_price_per_qty": 120000,
+            "inc_share_dis_amt": 0,
+            "isEdited": false,
+            "mrp": 0,
+            "sellingprice": 120000,
+            "taxobject_uuid": "ea8a6be0-ce84-4077-b039-f1e663a327d4",
+            "total_excl_charge_per_qty": 24,
+            "totalprice": 120108
+          },
+          "product_code": "WBRC39013",
+          "product_name": "White Boiled Rice",
+          "properties": [],
+          "qty": 0,
+          "return_qty": 0,
+          "sku": "004UEAHVYD900",
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": 54
+            },
+            {
+              "type": 8,
+              "value": 54
+            }
+          ],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "White Boiled Rice"
+        }
+      ],
+      "kots": [],
+      "loyalty_partner_uuid": null,
+      "modifiedat": 1545979127,
+      "no_service_charge": false,
+      "online_transaction_id": 0,
+      "orderid": 50,
+      "otp": null,
+      "owner_device_id": 826925553,
+      "parent_uuid": null,
+      "partner_checkout": null,
+      "partner_ref_number": null,
+      "partner_uuid": "eace51cb-6768-4ff2-ae4f-41e509ed030c",
+      "payments": [
+        {
+          "amount": 6000,
+          "card_num": "",
+          "checkout_uuid": null,
+          "conversion_factor": 10000,
+          "coupon_type": 0,
+          "createdat": 1545979125,
+          "currency": "INR",
+          "device_id": 826925553,
+          "edited_emp_uuid": null,
+          "email": null,
+          "method": 1,
+          "mode": 2,
+          "modifiedat": 1545979125,
+          "parent_amount": 0,
+          "parent_uuid": null,
+          "payment_init_uuid": null,
+          "payment_system_connected": false,
+          "phone_number": null,
+          "ref_id": "",
+          "reference_id": null,
+          "status": 4,
+          "trnx_reference": null,
+          "trnx_uuid": null,
+          "type": 1,
+          "uuid": "c7abe4e5-249e-4f31-8f4f-d73b01faa582"
+        },
+        {
+          "amount": 3,
+          "card_num": "",
+          "checkout_uuid": null,
+          "conversion_factor": 10000,
+          "coupon_type": 0,
+          "createdat": 1545979127,
+          "currency": "INR",
+          "device_id": 826925553,
+          "edited_emp_uuid": null,
+          "email": null,
+          "method": 1,
+          "mode": 5,
+          "modifiedat": 1545979127,
+          "parent_amount": 0,
+          "parent_uuid": null,
+          "payment_init_uuid": null,
+          "payment_system_connected": false,
+          "phone_number": null,
+          "ref_id": "",
+          "reference_id": null,
+          "status": 4,
+          "trnx_reference": null,
+          "trnx_uuid": null,
+          "type": 1,
+          "uuid": "9222dc70-4fc1-4be2-b339-2f86966c819a"
+        }
+      ],
+      "printcount": 0,
+      "refund_reason": 0,
+      "schedules": [],
+      "splitspec": null,
+      "status": 7,
+      "summary": {
+        "chargesplit": [],
+        "chargetaxsplit": null,
+        "comment": null,
+        "discountsplit": [],
+        "exclusiveChargesplit": [],
+        "exclusiveTaxsplit": [
+          {
+            "is_exclusive": true,
+            "type": 7,
+            "value": 2
+          },
+          {
+            "is_exclusive": true,
+            "type": 8,
+            "value": 2
+          }
+        ],
+        "grand_total": 6003,
+        "number_of_items": 1000,
+        "pending_items": 0,
+        "sub_total": 6000,
+        "taxsplit": [
+          {
+            "is_exclusive": false,
+            "type": 7,
+            "value": 2
+          },
+          {
+            "is_exclusive": false,
+            "type": 8,
+            "value": 2
+          }
+        ],
+        "total_charges": 0,
+        "total_discounts": 0,
+        "total_exclu_discounts": 0,
+        "total_order_charge_n_tax": 0,
+        "total_order_exclu_charge": 0,
+        "total_tax": 3
+      },
+      "tables": [],
+      "token_number": 0,
+      "type": 1,
+      "uuid": "b00856cd-473b-44bc-a15e-e993269b42c3"
+    }
+  ],
+  "prefix": "I7E4B2",
+  "summary": {
+    "grand_total": 6003,
+    "is_edited": false,
+    "is_refunded": false,
+    "order_count": 1,
+    "payment_balance": 0,
+    "sub_total": 6000,
+    "total_charge": 0,
+    "total_dis": 0,
+    "total_tax": 3
+  },
+  "type": 2,
+  "uuid": "846283cc-2425-4fd7-9619-b45d3bb94164"
+}

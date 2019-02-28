@@ -1,0 +1,51 @@
+[
+  {
+    "owner": {
+      "phone_number": "9343932742",
+      "login_credentials": {
+        "web_password": "APIAutomation",
+        "device_password": "1234"
+      },
+      "alternate_address": {
+        "city": "",
+        "state": "",
+        "street": "",
+        "addr2": "",
+        "zip": "",
+        "addr1": "",
+        "country": "",
+        "near": ""
+      },
+      "stores": [
+        {
+          "branches": [
+          ],
+          "name": "TestStore_EmptyBranchList",
+          "address": {
+            "city": "Bangalore",
+            "state": "Karnataka",
+            "street": "Panathur Main Road",
+            "addr2": "Munireddy Layout",
+            "zip": "560103",
+            "addr1": "9, Sanjeev Sadan",
+            "country": "India",
+            "near": "near SBI"
+          }
+        }
+      ],
+      "name": "TestOwner_EmptyBranchList",
+      "registered_address": {
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "street": "Panathur Main Road",
+        "addr2": "Munireddy Layout",
+        "zip": "560103",
+        "addr1": "9, Sanjeev Sadan",
+        "country": "India",
+        "near": "near SBI"
+      },
+      "email": "apiautomation@gmail.com",
+      "gst": "29AADCB2230M1ZP"
+    }
+  }
+]

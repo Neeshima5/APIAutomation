@@ -1,0 +1,295 @@
+{
+  "createdat": 1545042529,
+  "invoiceId": 5,
+  "modifiedat": 1545042704,
+  "orders": [
+    {
+      "channel_uuid": "2953942b-ef8d-4467-8e16-c3bcc23aeca6",
+      "charge_uuid": null,
+      "chargesplit": [],
+      "comments": [],
+      "createdat": 1545042529,
+      "currency": "INR",
+      "customers": [
+        {
+          "customer": {
+            "contact": {
+              "address": [],
+              "email": [],
+              "is_active": false,
+              "is_default": false,
+              "phone": [
+                {
+                  "ext": "",
+                  "is_active": true,
+                  "is_default": true,
+                  "number": "+919483341268",
+                  "type": 0,
+                  "uuid": "848f969e-3153-4441-b4da-50334651b5f8"
+                }
+              ],
+              "urls": []
+            },
+            "name": "",
+            "email_enabled": false,
+            "feedback": null,
+            "firstname": "",
+            "gstin": null,
+            "image": null,
+            "is_active": true,
+            "lastname": null,
+            "middlename": null,
+            "rating": 0,
+            "sms_enabled": false,
+            "store_uuid": "bf753b13-e4ee-4f89-9dac-ac0e80b5c0c5",
+            "title": null,
+            "uuid": "bf753b13-e4ee-4f89-9dac-ac0e80b5c0c5",
+            "year_of_birth": null
+          },
+          "feedback": "",
+          "rating": 0
+        }
+      ],
+      "details": {
+        "chargedetails": [],
+        "ruledetails": [],
+        "taxdetails": [
+          {
+            "details": [
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "CGST",
+                "scaling_factor": 100,
+                "type": 8,
+                "value": 250
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "IGST",
+                "scaling_factor": 100,
+                "type": 9,
+                "value": 450
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "SGST",
+                "scaling_factor": 100,
+                "type": 7,
+                "value": 250
+              }
+            ],
+            "name": "TaxAutomation2",
+            "uuid": "30259179-9ae5-4a02-bde8-f36b4727bfa4"
+          }
+        ]
+      },
+      "device_id": 826925553,
+      "discard_reason": 0,
+      "discounts": [],
+      "employees": [
+        {
+          "name": "Neeshima",
+          "rank": 0,
+          "uuid": "aec758c6-c5ee-4c0b-8c66-ac19c4e62875"
+        }
+      ],
+      "inter_state": false,
+      "items": [
+        {
+          "chargesplit": [],
+          "comments": [],
+          "delete_reason": 0,
+          "description": null,
+          "hsc": null,
+          "ingredients": [],
+          "label_name": null,
+          "line_item_id": 1,
+          "machinecode": 0,
+          "metric": 3,
+          "modifiers": [],
+          "parent_line_item_id": 0,
+          "price": {
+            "addonsprice": 0,
+            "channel_uuid": "2953942b-ef8d-4467-8e16-c3bcc23aeca6",
+            "chargeobject_uuid": null,
+            "dis_percent": 0,
+            "editedsellingprice": 0,
+            "excl_dis": 0,
+            "excl_discounted_price_per_qty": 6000,
+            "excl_item_dis_amt": 0,
+            "excl_price_per_qty": 6000,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 0,
+            "inc_price_per_qty": 6000,
+            "inc_share_dis_amt": 0,
+            "isEdited": false,
+            "mrp": 0,
+            "sellingprice": 6000,
+            "taxobject_uuid": "30259179-9ae5-4a02-bde8-f36b4727bfa4",
+            "total_excl_charge_per_qty": 0,
+            "totalprice": 18009
+          },
+          "product_code": "KERMT123",
+          "product_name": "Red Boiled Rice",
+          "properties": [],
+          "qty": 3000,
+          "return_qty": 0,
+          "sku": "004UEQQC55F00",
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": 5
+            },
+            {
+              "type": 8,
+              "value": 5
+            }
+          ],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "Red Boiled Rice"
+        }
+      ],
+      "kots": [],
+      "loyalty_partner_uuid": null,
+      "modifiedat": 1545042704,
+      "no_service_charge": false,
+      "online_transaction_id": 0,
+      "orderid": 5,
+      "otp": null,
+      "owner_device_id": 826925553,
+      "parent_uuid": null,
+      "partner_checkout": null,
+      "partner_ref_number": null,
+      "partner_uuid": null,
+      "payments": [
+        {
+          "amount": 18000,
+          "card_num": "",
+          "checkout_uuid": null,
+          "conversion_factor": 10000,
+          "coupon_type": 0,
+          "createdat": 1545042702,
+          "currency": "INR",
+          "device_id": 826925553,
+          "edited_emp_uuid": null,
+          "email": null,
+          "method": 1,
+          "mode": 1,
+          "modifiedat": 1545042702,
+          "parent_amount": 0,
+          "parent_uuid": null,
+          "payment_init_uuid": null,
+          "payment_system_connected": false,
+          "phone_number": null,
+          "ref_id": "",
+          "reference_id": null,
+          "status": 4,
+          "trnx_reference": null,
+          "trnx_uuid": null,
+          "type": 1,
+          "uuid": "7c6a0a4c-c815-4a46-845d-579e57d7062f"
+        },
+        {
+          "amount": 9,
+          "card_num": "",
+          "checkout_uuid": null,
+          "conversion_factor": 10000,
+          "coupon_type": 0,
+          "createdat": 1545042704,
+          "currency": "INR",
+          "device_id": 826925553,
+          "edited_emp_uuid": null,
+          "email": null,
+          "method": 1,
+          "mode": 5,
+          "modifiedat": 1545042704,
+          "parent_amount": 0,
+          "parent_uuid": null,
+          "payment_init_uuid": null,
+          "payment_system_connected": false,
+          "phone_number": null,
+          "ref_id": "",
+          "reference_id": null,
+          "status": 4,
+          "trnx_reference": null,
+          "trnx_uuid": null,
+          "type": 1,
+          "uuid": "c85ecdec-5d11-47fc-917d-4787342eeaa4"
+        }
+      ],
+      "printcount": 0,
+      "refund_reason": 0,
+      "schedules": [],
+      "splitspec": null,
+      "status": 7,
+      "summary": {
+        "chargesplit": [],
+        "chargetaxsplit": null,
+        "comment": null,
+        "discountsplit": [],
+        "exclusiveChargesplit": [],
+        "exclusiveTaxsplit": [
+          {
+            "is_exclusive": true,
+            "type": 7,
+            "value": 5
+          },
+          {
+            "is_exclusive": true,
+            "type": 8,
+            "value": 5
+          }
+        ],
+        "grand_total": 18009,
+        "number_of_items": 3000,
+        "pending_items": 0,
+        "sub_total": 18000,
+        "taxsplit": [
+          {
+            "is_exclusive": false,
+            "type": 7,
+            "value": 5
+          },
+          {
+            "is_exclusive": false,
+            "type": 8,
+            "value": 5
+          }
+        ],
+        "total_charges": 0,
+        "total_discounts": 0,
+        "total_exclu_discounts": 0,
+        "total_order_charge_n_tax": 0,
+        "total_order_exclu_charge": 0,
+        "total_tax": 9
+      },
+      "tables": [],
+      "token_number": 0,
+      "type": 1,
+      "uuid": "d3f42a39-d164-44d8-9533-07fcf829ccea"
+    }
+  ],
+  "prefix": "I7E4B2",
+  "summary": {
+    "grand_total": 18009,
+    "is_edited": false,
+    "is_refunded": false,
+    "order_count": 1,
+    "payment_balance": 0,
+    "sub_total": 18000,
+    "total_charge": 0,
+    "total_dis": 0,
+    "total_tax": 9
+  },
+  "type": 2,
+  "uuid": "3c313aba-b57f-4464-8562-94f908883b3e"
+}

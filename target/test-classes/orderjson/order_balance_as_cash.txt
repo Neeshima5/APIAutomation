@@ -1,0 +1,540 @@
+{
+  "createdat": 1545126421,
+  "invoiceId": 38,
+  "modifiedat": 1545127757,
+  "orders": [
+    {
+      "channel_uuid": "5fbf055d-42ed-4b4f-92ff-543b8160ee25",
+      "charge_uuid": null,
+      "chargesplit": [],
+      "comments": [],
+      "createdat": 1545126421,
+      "currency": "INR",
+      "customers": [
+        {
+          "customer": {
+            "contact": {
+              "address": [],
+              "email": [],
+              "is_active": false,
+              "is_default": false,
+              "phone": [
+                {
+                  "ext": "",
+                  "is_active": true,
+                  "is_default": true,
+                  "number": "+919478534645",
+                  "type": 0,
+                  "uuid": "2824e720-3e70-464f-acbf-b24111a4ccaa"
+                }
+              ],
+              "urls": []
+            },
+            "name": "",
+            "email_enabled": false,
+            "feedback": null,
+            "firstname": "",
+            "gstin": null,
+            "image": null,
+            "is_active": true,
+            "lastname": null,
+            "middlename": null,
+            "rating": 0,
+            "sms_enabled": false,
+            "store_uuid": "eeb7a70e-362d-4b72-992e-10167111f833",
+            "title": null,
+            "uuid": "eeb7a70e-362d-4b72-992e-10167111f833",
+            "year_of_birth": null
+          },
+          "feedback": "",
+          "rating": 0
+        }
+      ],
+      "details": {
+        "chargedetails": [
+          {
+            "details": [
+              {
+                "inclusive": false,
+                "metric": 2,
+                "name": "packaging",
+                "scaling_factor": 100,
+                "tax_uuid": "0e53b5c7-fc2e-42ba-a14c-e72fa65dfb12",
+                "type": 1,
+                "value": 1000
+              },
+              {
+                "inclusive": false,
+                "metric": 2,
+                "name": "delivery",
+                "scaling_factor": 100,
+                "tax_uuid": "0e53b5c7-fc2e-42ba-a14c-e72fa65dfb12",
+                "type": 2,
+                "value": 1500
+              },
+              {
+                "inclusive": false,
+                "metric": 1,
+                "name": "other",
+                "scaling_factor": 100,
+                "tax_uuid": "0e53b5c7-fc2e-42ba-a14c-e72fa65dfb12",
+                "type": 4,
+                "value": 200
+              }
+            ],
+            "name": "ExclusiveCharge",
+            "uuid": "0b6728bb-f27e-4cbf-b7fb-f7094433a6a9"
+          },
+          {
+            "details": [
+              {
+                "inclusive": false,
+                "metric": 2,
+                "name": "packaging",
+                "scaling_factor": 100,
+                "tax_uuid": "0e53b5c7-fc2e-42ba-a14c-e72fa65dfb12",
+                "type": 1,
+                "value": 1000
+              },
+              {
+                "inclusive": false,
+                "metric": 2,
+                "name": "delivery",
+                "scaling_factor": 100,
+                "tax_uuid": "0e53b5c7-fc2e-42ba-a14c-e72fa65dfb12",
+                "type": 2,
+                "value": 3000
+              },
+              {
+                "inclusive": false,
+                "metric": 1,
+                "name": "service",
+                "scaling_factor": 100,
+                "tax_uuid": "0e53b5c7-fc2e-42ba-a14c-e72fa65dfb12",
+                "type": 3,
+                "value": 250
+              },
+              {
+                "inclusive": true,
+                "metric": 1,
+                "name": "other",
+                "scaling_factor": 100,
+                "tax_uuid": "0e53b5c7-fc2e-42ba-a14c-e72fa65dfb12",
+                "type": 4,
+                "value": 200
+              }
+            ],
+            "name": "AllCharge",
+            "uuid": "7ef9089a-f1fe-4f06-a88d-c3a5016cc508"
+          }
+        ],
+        "ruledetails": [],
+        "taxdetails": [
+          {
+            "details": [],
+            "name": "GST 0",
+            "uuid": "0e53b5c7-fc2e-42ba-a14c-e72fa65dfb12"
+          },
+          {
+            "details": [
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "CGST",
+                "scaling_factor": 100,
+                "type": 8,
+                "value": 450
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "SGST",
+                "scaling_factor": 100,
+                "type": 7,
+                "value": 450
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "IGST",
+                "scaling_factor": 100,
+                "type": 9,
+                "value": 900
+              }
+            ],
+            "name": "TaxAutomation1",
+            "uuid": "ea8a6be0-ce84-4077-b039-f1e663a327d4"
+          }
+        ]
+      },
+      "device_id": 826925553,
+      "discard_reason": 0,
+      "discounts": [],
+      "employees": [
+        {
+          "name": "Neeshima",
+          "rank": 0,
+          "uuid": "aec758c6-c5ee-4c0b-8c66-ac19c4e62875"
+        }
+      ],
+      "inter_state": false,
+      "items": [
+        {
+          "chargesplit": [
+            {
+              "taxsplit": [],
+              "type": 1,
+              "value": 1000
+            },
+            {
+              "taxsplit": [],
+              "type": 2,
+              "value": 3000
+            },
+            {
+              "taxsplit": [],
+              "type": 3,
+              "value": 7
+            },
+            {
+              "taxsplit": [],
+              "type": 4,
+              "value": 6
+            }
+          ],
+          "comments": [],
+          "delete_reason": 0,
+          "description": "Paratha and Palak Paneer Combo Meal - Veg",
+          "hsc": null,
+          "ingredients": [],
+          "label_name": null,
+          "line_item_id": 1,
+          "machinecode": 0,
+          "metric": 6,
+          "modifiers": [],
+          "parent_line_item_id": 0,
+          "price": {
+            "addonsprice": 0,
+            "channel_uuid": "5fbf055d-42ed-4b4f-92ff-543b8160ee25",
+            "chargeobject_uuid": "7ef9089a-f1fe-4f06-a88d-c3a5016cc508",
+            "dis_percent": 0,
+            "editedsellingprice": 0,
+            "excl_dis": 0,
+            "excl_discounted_price_per_qty": 29994,
+            "excl_item_dis_amt": 0,
+            "excl_price_per_qty": 29994,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 0,
+            "inc_price_per_qty": 30000,
+            "inc_share_dis_amt": 0,
+            "isEdited": false,
+            "mrp": 0,
+            "sellingprice": 30000,
+            "taxobject_uuid": "ea8a6be0-ce84-4077-b039-f1e663a327d4",
+            "total_excl_charge_per_qty": 4013,
+            "totalprice": 34034
+          },
+          "product_code": "PRTPLKPN4803",
+          "product_name": "Paratha Palak Paneer Combo",
+          "properties": [],
+          "qty": 1000,
+          "return_qty": 0,
+          "sku": "004UERYE3S600",
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": 13
+            },
+            {
+              "type": 8,
+              "value": 13
+            }
+          ],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "Paratha Palak Paneer Combo"
+        },
+        {
+          "chargesplit": [
+            {
+              "taxsplit": [],
+              "type": 1,
+              "value": 1000
+            },
+            {
+              "taxsplit": [],
+              "type": 2,
+              "value": 1500
+            },
+            {
+              "taxsplit": [],
+              "type": 4,
+              "value": 4
+            }
+          ],
+          "comments": [],
+          "delete_reason": 0,
+          "description": null,
+          "hsc": null,
+          "ingredients": [],
+          "label_name": null,
+          "line_item_id": 2,
+          "machinecode": 0,
+          "metric": 5,
+          "modifiers": [],
+          "parent_line_item_id": 0,
+          "price": {
+            "addonsprice": 0,
+            "channel_uuid": "5fbf055d-42ed-4b4f-92ff-543b8160ee25",
+            "chargeobject_uuid": "0b6728bb-f27e-4cbf-b7fb-f7094433a6a9",
+            "dis_percent": 0,
+            "editedsellingprice": 0,
+            "excl_dis": 0,
+            "excl_discounted_price_per_qty": 20000,
+            "excl_item_dis_amt": 0,
+            "excl_price_per_qty": 20000,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 0,
+            "inc_price_per_qty": 20000,
+            "inc_share_dis_amt": 0,
+            "isEdited": false,
+            "mrp": 0,
+            "sellingprice": 20000,
+            "taxobject_uuid": "ea8a6be0-ce84-4077-b039-f1e663a327d4",
+            "total_excl_charge_per_qty": 2504,
+            "totalprice": 22522
+          },
+          "product_code": "VKSHPL5430",
+          "product_name": "Veg Kashimiri Pulao",
+          "properties": [],
+          "qty": 1000,
+          "return_qty": 0,
+          "sku": "004UEHBDFM100",
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": 9
+            },
+            {
+              "type": 8,
+              "value": 9
+            }
+          ],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "Veg Kashimiri Pulao"
+        }
+      ],
+      "kots": [],
+      "loyalty_partner_uuid": null,
+      "modifiedat": 1545127757,
+      "no_service_charge": false,
+      "online_transaction_id": 0,
+      "orderid": 45,
+      "otp": null,
+      "owner_device_id": 826925553,
+      "parent_uuid": null,
+      "partner_checkout": {
+        "payment_status": 0,
+        "qr": null,
+        "qr_createdAt": 0,
+        "qr_status": 4,
+        "trans_id": null
+      },
+      "partner_ref_number": null,
+      "partner_uuid": "e2f26f0e-bc4d-4c5d-a17b-74a177a49349",
+      "payments": [
+        {
+          "amount": 60000,
+          "card_num": "",
+          "checkout_uuid": null,
+          "conversion_factor": 10000,
+          "coupon_type": 0,
+          "createdat": 1545127750,
+          "currency": "INR",
+          "device_id": 826925553,
+          "edited_emp_uuid": null,
+          "email": null,
+          "method": 1,
+          "mode": 1,
+          "modifiedat": 1545127750,
+          "parent_amount": 0,
+          "parent_uuid": null,
+          "payment_init_uuid": null,
+          "payment_system_connected": false,
+          "phone_number": null,
+          "ref_id": "",
+          "reference_id": null,
+          "status": 4,
+          "trnx_reference": null,
+          "trnx_uuid": null,
+          "type": 1,
+          "uuid": "a8a67ee2-4792-446f-8b6c-d80e595e1256"
+        },
+        {
+          "amount": 3444,
+          "card_num": "",
+          "checkout_uuid": null,
+          "conversion_factor": 10000,
+          "coupon_type": 0,
+          "createdat": 1545127757,
+          "currency": "INR",
+          "device_id": 826925553,
+          "edited_emp_uuid": null,
+          "email": null,
+          "method": 3,
+          "mode": 1,
+          "modifiedat": 1545127757,
+          "parent_amount": 0,
+          "parent_uuid": null,
+          "payment_init_uuid": null,
+          "payment_system_connected": false,
+          "phone_number": null,
+          "ref_id": "",
+          "reference_id": null,
+          "status": 4,
+          "trnx_reference": null,
+          "trnx_uuid": null,
+          "type": 2,
+          "uuid": "263c21e6-284b-4fe0-87c7-ca3fbfe2d829"
+        }
+      ],
+      "printcount": 0,
+      "refund_reason": 0,
+      "schedules": [
+        {
+          "alarm_time": 1545127728,
+          "assignee": "e2f26f0e-bc4d-4c5d-a17b-74a177a49349",
+          "assignee_type": 2,
+          "createdAt": 1545127729,
+          "emp_uuid": null,
+          "end_time": 0,
+          "modifiedAt": 0,
+          "ref_id": null,
+          "start_time": 1545127728,
+          "status": 1,
+          "type": 2,
+          "uuid": "cbe58bfe-69a0-40d5-ad01-e9a7e5b17015"
+        }
+      ],
+      "splitspec": null,
+      "status": 7,
+      "summary": {
+        "chargesplit": [
+          {
+            "is_exclusive": false,
+            "taxsplit": null,
+            "type": 1,
+            "value": 2000
+          },
+          {
+            "is_exclusive": false,
+            "taxsplit": null,
+            "type": 2,
+            "value": 4500
+          },
+          {
+            "is_exclusive": false,
+            "taxsplit": null,
+            "type": 3,
+            "value": 7
+          },
+          {
+            "is_exclusive": false,
+            "taxsplit": null,
+            "type": 4,
+            "value": 10
+          }
+        ],
+        "chargetaxsplit": null,
+        "comment": null,
+        "discountsplit": [],
+        "exclusiveChargesplit": [
+          {
+            "is_exclusive": true,
+            "taxsplit": null,
+            "type": 1,
+            "value": 2000
+          },
+          {
+            "is_exclusive": true,
+            "taxsplit": null,
+            "type": 2,
+            "value": 4500
+          },
+          {
+            "is_exclusive": true,
+            "taxsplit": null,
+            "type": 3,
+            "value": 7
+          },
+          {
+            "is_exclusive": true,
+            "taxsplit": null,
+            "type": 4,
+            "value": 4
+          }
+        ],
+        "exclusiveTaxsplit": [
+          {
+            "is_exclusive": true,
+            "type": 7,
+            "value": 22
+          },
+          {
+            "is_exclusive": true,
+            "type": 8,
+            "value": 22
+          }
+        ],
+        "grand_total": 56556,
+        "number_of_items": 2000,
+        "pending_items": 0,
+        "sub_total": 50000,
+        "taxsplit": [
+          {
+            "is_exclusive": false,
+            "type": 7,
+            "value": 22
+          },
+          {
+            "is_exclusive": false,
+            "type": 8,
+            "value": 22
+          }
+        ],
+        "total_charges": 6511,
+        "total_discounts": 0,
+        "total_exclu_discounts": 0,
+        "total_order_charge_n_tax": 0,
+        "total_order_exclu_charge": 0,
+        "total_tax": 45
+      },
+      "tables": [],
+      "token_number": 0,
+      "type": 1,
+      "uuid": "fcc8ac89-87e5-4103-bbc9-5ef733f0b956"
+    }
+  ],
+  "prefix": "I7E4B2",
+  "summary": {
+    "grand_total": 56556,
+    "is_edited": false,
+    "is_refunded": false,
+    "order_count": 1,
+    "payment_balance": 0,
+    "sub_total": 50000,
+    "total_charge": 6511,
+    "total_dis": 0,
+    "total_tax": 45
+  },
+  "type": 2,
+  "uuid": "8da8a331-19fc-4097-b41b-932e53f61822"
+}

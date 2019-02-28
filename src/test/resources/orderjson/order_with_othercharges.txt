@@ -1,0 +1,354 @@
+{
+  "createdat": 1545111800,
+  "invoiceId": 19,
+  "modifiedat": 1545111833,
+  "orders": [
+    {
+      "channel_uuid": "2953942b-ef8d-4467-8e16-c3bcc23aeca6",
+      "charge_uuid": null,
+      "chargesplit": [],
+      "comments": [],
+      "createdat": 1545111800,
+      "currency": "INR",
+      "customers": [
+        {
+          "customer": {
+            "contact": {
+              "address": [],
+              "email": [],
+              "is_active": false,
+              "is_default": false,
+              "phone": [
+                {
+                  "ext": "",
+                  "is_active": true,
+                  "is_default": true,
+                  "number": "+919658565585",
+                  "type": 0,
+                  "uuid": "bad40b0d-3acb-43cd-943f-3255abd16fda"
+                }
+              ],
+              "urls": []
+            },
+            "name": "",
+            "email_enabled": false,
+            "feedback": null,
+            "firstname": "",
+            "gstin": null,
+            "image": null,
+            "is_active": true,
+            "lastname": null,
+            "middlename": null,
+            "rating": 0,
+            "sms_enabled": false,
+            "store_uuid": "df50c090-11f3-4e1e-8b9b-0c46f6007ee6",
+            "title": null,
+            "uuid": "df50c090-11f3-4e1e-8b9b-0c46f6007ee6",
+            "year_of_birth": null
+          },
+          "feedback": "",
+          "rating": 0
+        }
+      ],
+      "details": {
+        "chargedetails": [
+          {
+            "details": [
+              {
+                "inclusive": false,
+                "metric": 1,
+                "name": "other",
+                "scaling_factor": 100,
+                "tax_uuid": "0e53b5c7-fc2e-42ba-a14c-e72fa65dfb12",
+                "type": 4,
+                "value": 500
+              }
+            ],
+            "name": "CessCharge",
+            "uuid": "399a3156-83fd-46a5-bca9-c2146e2a98e3"
+          }
+        ],
+        "ruledetails": [],
+        "taxdetails": [
+          {
+            "details": [
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "CGST",
+                "scaling_factor": 100,
+                "type": 8,
+                "value": 450
+              },
+              {
+                "children": [],
+                "inclusive": true,
+                "metric": 1,
+                "name": "VAT",
+                "scaling_factor": 100,
+                "type": 10,
+                "value": 200
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "SGST",
+                "scaling_factor": 100,
+                "type": 7,
+                "value": 450
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "IGST",
+                "scaling_factor": 100,
+                "type": 9,
+                "value": 900
+              }
+            ],
+            "name": "TaxAutomation3",
+            "uuid": "37b1c5cd-684b-4d87-9410-4c0a0bc5329c"
+          },
+          {
+            "details": [],
+            "name": "GST 0",
+            "uuid": "0e53b5c7-fc2e-42ba-a14c-e72fa65dfb12"
+          }
+        ]
+      },
+      "device_id": 826925553,
+      "discard_reason": 0,
+      "discounts": [],
+      "employees": [
+        {
+          "name": "Neeshima",
+          "rank": 0,
+          "uuid": "aec758c6-c5ee-4c0b-8c66-ac19c4e62875"
+        }
+      ],
+      "inter_state": false,
+      "items": [
+        {
+          "chargesplit": [
+            {
+              "taxsplit": [],
+              "type": 4,
+              "value": 1200
+            }
+          ],
+          "comments": [],
+          "delete_reason": 0,
+          "description": "Samsung A7 smart phone",
+          "hsc": null,
+          "ingredients": [],
+          "label_name": null,
+          "line_item_id": 1,
+          "machinecode": 0,
+          "metric": 5,
+          "modifiers": [],
+          "parent_line_item_id": 0,
+          "price": {
+            "addonsprice": 0,
+            "channel_uuid": "2953942b-ef8d-4467-8e16-c3bcc23aeca6",
+            "chargeobject_uuid": "399a3156-83fd-46a5-bca9-c2146e2a98e3",
+            "dis_percent": 0,
+            "editedsellingprice": 0,
+            "excl_dis": 0,
+            "excl_discounted_price_per_qty": 2399520,
+            "excl_item_dis_amt": 0,
+            "excl_price_per_qty": 2399520,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 0,
+            "inc_price_per_qty": 2400000,
+            "inc_share_dis_amt": 0,
+            "isEdited": false,
+            "mrp": 0,
+            "sellingprice": 2400000,
+            "taxobject_uuid": "37b1c5cd-684b-4d87-9410-4c0a0bc5329c",
+            "total_excl_charge_per_qty": 1200,
+            "totalprice": 2403359
+          },
+          "product_code": "SAMA7G39021",
+          "product_name": "Samsung A7",
+          "properties": [],
+          "qty": 1000,
+          "return_qty": 0,
+          "sku": "004UEDHJ1VK00",
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": 1080
+            },
+            {
+              "type": 8,
+              "value": 1080
+            },
+            {
+              "type": 10,
+              "value": 480
+            }
+          ],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "Samsung A7"
+        }
+      ],
+      "kots": [],
+      "loyalty_partner_uuid": null,
+      "modifiedat": 1545111833,
+      "no_service_charge": false,
+      "online_transaction_id": 0,
+      "orderid": 20,
+      "otp": null,
+      "owner_device_id": 826925553,
+      "parent_uuid": null,
+      "partner_checkout": null,
+      "partner_ref_number": null,
+      "partner_uuid": null,
+      "payments": [
+        {
+          "amount": 2403400,
+          "card_num": "",
+          "checkout_uuid": null,
+          "conversion_factor": 10000,
+          "coupon_type": 0,
+          "createdat": 1545111831,
+          "currency": "INR",
+          "device_id": 826925553,
+          "edited_emp_uuid": null,
+          "email": null,
+          "method": 1,
+          "mode": 2,
+          "modifiedat": 1545111831,
+          "parent_amount": 0,
+          "parent_uuid": null,
+          "payment_init_uuid": null,
+          "payment_system_connected": false,
+          "phone_number": null,
+          "ref_id": "",
+          "reference_id": null,
+          "status": 4,
+          "trnx_reference": null,
+          "trnx_uuid": null,
+          "type": 1,
+          "uuid": "787d6dac-aee6-4192-abb2-9757f573a0ee"
+        },
+        {
+          "amount": 41,
+          "card_num": "",
+          "checkout_uuid": null,
+          "conversion_factor": 10000,
+          "coupon_type": 0,
+          "createdat": 1545111833,
+          "currency": "INR",
+          "device_id": 826925553,
+          "edited_emp_uuid": null,
+          "email": null,
+          "method": 1,
+          "mode": 5,
+          "modifiedat": 1545111833,
+          "parent_amount": 0,
+          "parent_uuid": null,
+          "payment_init_uuid": null,
+          "payment_system_connected": false,
+          "phone_number": null,
+          "ref_id": "",
+          "reference_id": null,
+          "status": 4,
+          "trnx_reference": null,
+          "trnx_uuid": null,
+          "type": 2,
+          "uuid": "6c02dc2e-4def-43f0-ba44-18f5842fbe9a"
+        }
+      ],
+      "printcount": 0,
+      "refund_reason": 0,
+      "schedules": [],
+      "splitspec": null,
+      "status": 7,
+      "summary": {
+        "chargesplit": [
+          {
+            "is_exclusive": false,
+            "taxsplit": null,
+            "type": 4,
+            "value": 1200
+          }
+        ],
+        "chargetaxsplit": null,
+        "comment": null,
+        "discountsplit": [],
+        "exclusiveChargesplit": [
+          {
+            "is_exclusive": true,
+            "taxsplit": null,
+            "type": 4,
+            "value": 1200
+          }
+        ],
+        "exclusiveTaxsplit": [
+          {
+            "is_exclusive": true,
+            "type": 7,
+            "value": 1080
+          },
+          {
+            "is_exclusive": true,
+            "type": 8,
+            "value": 1080
+          }
+        ],
+        "grand_total": 2403359,
+        "number_of_items": 1000,
+        "pending_items": 0,
+        "sub_total": 2400000,
+        "taxsplit": [
+          {
+            "is_exclusive": false,
+            "type": 7,
+            "value": 1080
+          },
+          {
+            "is_exclusive": false,
+            "type": 8,
+            "value": 1080
+          },
+          {
+            "is_exclusive": false,
+            "type": 10,
+            "value": 480
+          }
+        ],
+        "total_charges": 1200,
+        "total_discounts": 0,
+        "total_exclu_discounts": 0,
+        "total_order_charge_n_tax": 0,
+        "total_order_exclu_charge": 0,
+        "total_tax": 2160
+      },
+      "tables": [],
+      "token_number": 0,
+      "type": 1,
+      "uuid": "71b83b82-afa6-4cf4-a2ef-49ae1a12652d"
+    }
+  ],
+  "prefix": "I7E4B2",
+  "summary": {
+    "grand_total": 2403359,
+    "is_edited": false,
+    "is_refunded": false,
+    "order_count": 1,
+    "payment_balance": 0,
+    "sub_total": 2400000,
+    "total_charge": 1200,
+    "total_dis": 0,
+    "total_tax": 2160
+  },
+  "type": 2,
+  "uuid": "cb77bf2c-80d4-4912-aad2-3235c7c7aa1c"
+}

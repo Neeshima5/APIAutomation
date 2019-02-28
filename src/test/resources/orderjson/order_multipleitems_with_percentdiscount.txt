@@ -1,0 +1,232 @@
+{
+  "createdat": 1545982407,
+  "invoiceId": null,
+  "modifiedat": 1545982627,
+  "orders": [
+    {
+      "channel_uuid": "9e884c9b-cdc2-4c31-b57b-726c3ff6c94a",
+      "charge_uuid": null,
+      "chargesplit": [],
+      "comments": [],
+      "createdat": 1545982407,
+      "currency": "INR",
+      "customers": [],
+      "details": {
+        "chargedetails": [
+          {
+            "details": [],
+            "name": "Charges Inclusive with inclusive Tax",
+            "uuid": "f847350e-5f40-4067-ad91-a30dd6890c84"
+          }
+        ],
+        "ruledetails": [],
+        "taxdetails": [
+          {
+            "details": [],
+            "name": "Tax Inclu\u0026Exclu2",
+            "uuid": "fb8263e1-49a9-4da6-adb5-4929bbe0a6dc"
+          }
+        ]
+      },
+      "device_id": 692791234,
+      "discard_reason": 0,
+      "discounts": [
+        {
+          "code": "FHH2MJRYZ0",
+          "description": null,
+          "display_text": null,
+          "items": [
+            {
+              "consumed_qty": 0,
+              "line_item_id": 1,
+              "metric": 2,
+              "value": 2000
+            }
+          ],
+          "metric": 2,
+          "rule_uuid": null,
+          "status": 1,
+          "type": 4,
+          "value": 2000
+        },
+        {
+          "code": "WU3EG4Z829",
+          "description": null,
+          "display_text": null,
+          "items": [
+            {
+              "consumed_qty": 0,
+              "line_item_id": 1,
+              "metric": 1,
+              "value": 0
+            }
+          ],
+          "metric": 1,
+          "rule_uuid": null,
+          "status": 4,
+          "type": 4,
+          "value": 2000
+        }
+      ],
+      "employees": [
+        {
+          "name": "gisha",
+          "rank": 0,
+          "uuid": "ff24357a-8f78-4924-827a-03d32a6749bb"
+        }
+      ],
+      "inter_state": false,
+      "items": [
+        {
+          "chargesplit": [],
+          "comments": [],
+          "delete_reason": 0,
+          "description": null,
+          "hsc": null,
+          "ingredients": [],
+          "label_name": null,
+          "line_item_id": 1,
+          "machinecode": 0,
+          "metric": 4,
+          "modifiers": [],
+          "parent_line_item_id": 0,
+          "price": {
+            "addonsprice": 0,
+            "channel_uuid": "9e884c9b-cdc2-4c31-b57b-726c3ff6c94a",
+            "chargeobject_uuid": "f847350e-5f40-4067-ad91-a30dd6890c84",
+            "dis_percent": 2000,
+            "editedsellingprice": 4500,
+            "excl_dis": 2700,
+            "excl_discounted_price_per_qty": 3600,
+            "excl_item_dis_amt": 2700,
+            "excl_price_per_qty": 4500,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 2700,
+            "inc_price_per_qty": 4500,
+            "inc_share_dis_amt": 0,
+            "isEdited": true,
+            "mrp": 0,
+            "sellingprice": 0,
+            "taxobject_uuid": "fb8263e1-49a9-4da6-adb5-4929bbe0a6dc",
+            "total_excl_charge_per_qty": 0,
+            "totalprice": 10800
+          },
+          "product_code": "9993",
+          "product_name": "mosambi juice",
+          "properties": [],
+          "qty": 3000,
+          "return_qty": 0,
+          "sku": "0007J26SCL500",
+          "taxsplit": [],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "mosambi juice"
+        },
+        {
+          "chargesplit": [],
+          "comments": [],
+          "delete_reason": 0,
+          "description": null,
+          "hsc": null,
+          "ingredients": [],
+          "label_name": null,
+          "line_item_id": 2,
+          "machinecode": 0,
+          "metric": 4,
+          "modifiers": [],
+          "parent_line_item_id": 0,
+          "price": {
+            "addonsprice": 0,
+            "channel_uuid": "9e884c9b-cdc2-4c31-b57b-726c3ff6c94a",
+            "chargeobject_uuid": "f847350e-5f40-4067-ad91-a30dd6890c84",
+            "dis_percent": 0,
+            "editedsellingprice": 5000,
+            "excl_dis": 0,
+            "excl_discounted_price_per_qty": 5000,
+            "excl_item_dis_amt": 0,
+            "excl_price_per_qty": 5000,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 0,
+            "inc_price_per_qty": 5000,
+            "inc_share_dis_amt": 0,
+            "isEdited": true,
+            "mrp": 0,
+            "sellingprice": 0,
+            "taxobject_uuid": "fb8263e1-49a9-4da6-adb5-4929bbe0a6dc",
+            "total_excl_charge_per_qty": 0,
+            "totalprice": 10000
+          },
+          "product_code": "4784783",
+          "product_name": "pomogranate juice",
+          "properties": [],
+          "qty": 2000,
+          "return_qty": 0,
+          "sku": "0007JZE33Q000",
+          "taxsplit": [],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "pomogranate juice"
+        }
+      ],
+      "kots": [],
+      "loyalty_partner_uuid": null,
+      "modifiedat": 1545982627,
+      "no_service_charge": false,
+      "online_transaction_id": 0,
+      "orderid": 23,
+      "otp": null,
+      "owner_device_id": 692791234,
+      "parent_uuid": null,
+      "partner_checkout": null,
+      "partner_ref_number": null,
+      "partner_uuid": "af39ecff-9ad9-4a9e-90c5-96794dce9a9d",
+      "payments": [],
+      "printcount": 0,
+      "refund_reason": 0,
+      "schedules": [],
+      "splitspec": null,
+      "status": 2,
+      "summary": {
+        "chargesplit": [],
+        "chargetaxsplit": null,
+        "comment": null,
+        "discountsplit": [],
+        "exclusiveChargesplit": [],
+        "exclusiveTaxsplit": [],
+        "grand_total": 20800,
+        "number_of_items": 5000,
+        "pending_items": 0,
+        "sub_total": 23500,
+        "taxsplit": [],
+        "total_charges": 0,
+        "total_discounts": 2700,
+        "total_exclu_discounts": 2700,
+        "total_order_charge_n_tax": 0,
+        "total_order_exclu_charge": 0,
+        "total_tax": 0
+      },
+      "tables": [],
+      "token_number": 0,
+      "type": 1,
+      "uuid": "5e36be79-4145-4e7a-bb88-6a568b01835e"
+    }
+  ],
+  "prefix": "IRJ0EV",
+  "summary": {
+    "grand_total": 20800,
+    "is_edited": false,
+    "is_refunded": false,
+    "order_count": 1,
+    "payment_balance": 20800,
+    "sub_total": 23500,
+    "total_charge": 0,
+    "total_dis": 2700,
+    "total_tax": 0
+  },
+  "type": 2,
+  "uuid": "453c3d24-34ec-4635-bf41-7c5aa744a2ad"
+}

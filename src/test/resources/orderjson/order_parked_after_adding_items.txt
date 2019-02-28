@@ -1,0 +1,504 @@
+{
+  "createdat": 1545125024,
+  "invoiceId": null,
+  "modifiedat": 1545125329,
+  "orders": [
+    {
+      "channel_uuid": "2953942b-ef8d-4467-8e16-c3bcc23aeca6",
+      "charge_uuid": null,
+      "chargesplit": [],
+      "comments": [],
+      "createdat": 1545125024,
+      "currency": "INR",
+      "customers": [
+        {
+          "customer": {
+            "contact": {
+              "address": [],
+              "email": [],
+              "is_active": false,
+              "is_default": false,
+              "phone": [
+                {
+                  "ext": "",
+                  "is_active": true,
+                  "is_default": true,
+                  "number": "+918934855696",
+                  "type": 0,
+                  "uuid": "592d3495-c9db-4b1a-aec6-4ff5f431f61b"
+                }
+              ],
+              "urls": []
+            },
+            "name": "",
+            "email_enabled": false,
+            "feedback": null,
+            "firstname": "",
+            "gstin": null,
+            "image": null,
+            "is_active": true,
+            "lastname": null,
+            "middlename": null,
+            "rating": 0,
+            "sms_enabled": false,
+            "store_uuid": "bea3ac54-d83e-48b6-89b5-6847647113f9",
+            "title": null,
+            "uuid": "bea3ac54-d83e-48b6-89b5-6847647113f9",
+            "year_of_birth": null
+          },
+          "feedback": "",
+          "rating": 0
+        }
+      ],
+      "details": {
+        "chargedetails": [
+          {
+            "details": [
+              {
+                "inclusive": true,
+                "metric": 1,
+                "name": "other",
+                "scaling_factor": 100,
+                "tax_uuid": "0e53b5c7-fc2e-42ba-a14c-e72fa65dfb12",
+                "type": 4,
+                "value": 200
+              }
+            ],
+            "name": "InclusiveCharge",
+            "uuid": "3aaacf59-4481-4416-9e29-9bf3ff70b925"
+          }
+        ],
+        "ruledetails": [],
+        "taxdetails": [
+          {
+            "details": [],
+            "name": "GST 0",
+            "uuid": "0e53b5c7-fc2e-42ba-a14c-e72fa65dfb12"
+          },
+          {
+            "details": [
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "CGST",
+                "scaling_factor": 100,
+                "type": 8,
+                "value": 450
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "SGST",
+                "scaling_factor": 100,
+                "type": 7,
+                "value": 450
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "IGST",
+                "scaling_factor": 100,
+                "type": 9,
+                "value": 900
+              }
+            ],
+            "name": "TaxAutomation1",
+            "uuid": "ea8a6be0-ce84-4077-b039-f1e663a327d4"
+          }
+        ]
+      },
+      "device_id": 826925553,
+      "discard_reason": 0,
+      "discounts": [],
+      "employees": [
+        {
+          "name": "Neeshima",
+          "rank": 0,
+          "uuid": "aec758c6-c5ee-4c0b-8c66-ac19c4e62875"
+        }
+      ],
+      "inter_state": false,
+      "items": [
+        {
+          "chargesplit": [],
+          "comments": [],
+          "delete_reason": 0,
+          "description": "Cadbury Bourneville Dark Chocolate",
+          "hsc": null,
+          "ingredients": [],
+          "label_name": null,
+          "line_item_id": 1,
+          "machinecode": 0,
+          "metric": 5,
+          "modifiers": [],
+          "parent_line_item_id": 0,
+          "price": {
+            "addonsprice": 0,
+            "channel_uuid": "2953942b-ef8d-4467-8e16-c3bcc23aeca6",
+            "chargeobject_uuid": null,
+            "dis_percent": 0,
+            "editedsellingprice": 0,
+            "excl_dis": 0,
+            "excl_discounted_price_per_qty": 5000,
+            "excl_item_dis_amt": 0,
+            "excl_price_per_qty": 5000,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 0,
+            "inc_price_per_qty": 5000,
+            "inc_share_dis_amt": 0,
+            "isEdited": false,
+            "mrp": 0,
+            "sellingprice": 5000,
+            "taxobject_uuid": "ea8a6be0-ce84-4077-b039-f1e663a327d4",
+            "total_excl_charge_per_qty": 0,
+            "totalprice": 10009
+          },
+          "product_code": "CADBRNVL909",
+          "product_name": "Cadbury Bourneville",
+          "properties": [],
+          "qty": 2000,
+          "return_qty": 0,
+          "sku": "004UEXFW4JC00",
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": 5
+            },
+            {
+              "type": 8,
+              "value": 5
+            }
+          ],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "Cadbury Bourneville"
+        },
+        {
+          "chargesplit": [],
+          "comments": [],
+          "delete_reason": 0,
+          "description": null,
+          "hsc": null,
+          "ingredients": [],
+          "label_name": null,
+          "line_item_id": 2,
+          "machinecode": 0,
+          "metric": 5,
+          "modifiers": [],
+          "parent_line_item_id": 0,
+          "price": {
+            "addonsprice": 0,
+            "channel_uuid": "2953942b-ef8d-4467-8e16-c3bcc23aeca6",
+            "chargeobject_uuid": null,
+            "dis_percent": 0,
+            "editedsellingprice": 0,
+            "excl_dis": 0,
+            "excl_discounted_price_per_qty": 4000,
+            "excl_item_dis_amt": 0,
+            "excl_price_per_qty": 4000,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 0,
+            "inc_price_per_qty": 4000,
+            "inc_share_dis_amt": 0,
+            "isEdited": false,
+            "mrp": 0,
+            "sellingprice": 4000,
+            "taxobject_uuid": "ea8a6be0-ce84-4077-b039-f1e663a327d4",
+            "total_excl_charge_per_qty": 0,
+            "totalprice": 8007
+          },
+          "product_code": "CDM50G00",
+          "product_name": "Cadbury dairy milk",
+          "properties": [],
+          "qty": 0,
+          "return_qty": 0,
+          "sku": "004UEJITHQ800",
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": 4
+            },
+            {
+              "type": 8,
+              "value": 4
+            }
+          ],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "Cadbury dairy milk"
+        },
+        {
+          "chargesplit": [],
+          "comments": [],
+          "delete_reason": 0,
+          "description": null,
+          "hsc": null,
+          "ingredients": [],
+          "label_name": null,
+          "line_item_id": 3,
+          "machinecode": 0,
+          "metric": 6,
+          "modifiers": [],
+          "parent_line_item_id": 0,
+          "price": {
+            "addonsprice": 0,
+            "channel_uuid": "2953942b-ef8d-4467-8e16-c3bcc23aeca6",
+            "chargeobject_uuid": null,
+            "dis_percent": 0,
+            "editedsellingprice": 0,
+            "excl_dis": 0,
+            "excl_discounted_price_per_qty": 25000,
+            "excl_item_dis_amt": 0,
+            "excl_price_per_qty": 25000,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 0,
+            "inc_price_per_qty": 25000,
+            "inc_share_dis_amt": 0,
+            "isEdited": false,
+            "mrp": 0,
+            "sellingprice": 25000,
+            "taxobject_uuid": "ea8a6be0-ce84-4077-b039-f1e663a327d4",
+            "total_excl_charge_per_qty": 0,
+            "totalprice": 25023
+          },
+          "product_code": "CDPKBX50",
+          "product_name": "Cadbury perk",
+          "properties": [],
+          "qty": 1000,
+          "return_qty": 0,
+          "sku": "004UEC5C6UL00",
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": 11
+            },
+            {
+              "type": 8,
+              "value": 11
+            }
+          ],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "Cadbury perk"
+        },
+        {
+          "chargesplit": [
+            {
+              "taxsplit": [],
+              "type": 4,
+              "value": 10
+            }
+          ],
+          "comments": [],
+          "delete_reason": 0,
+          "description": "Toblerone Swiss chocolate - Fruit n Nut",
+          "hsc": null,
+          "ingredients": [],
+          "label_name": null,
+          "line_item_id": 4,
+          "machinecode": 0,
+          "metric": 5,
+          "modifiers": [],
+          "parent_line_item_id": 0,
+          "price": {
+            "addonsprice": 0,
+            "channel_uuid": "2953942b-ef8d-4467-8e16-c3bcc23aeca6",
+            "chargeobject_uuid": "3aaacf59-4481-4416-9e29-9bf3ff70b925",
+            "dis_percent": 0,
+            "editedsellingprice": 0,
+            "excl_dis": 0,
+            "excl_discounted_price_per_qty": 24995,
+            "excl_item_dis_amt": 0,
+            "excl_price_per_qty": 24995,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 0,
+            "inc_price_per_qty": 25000,
+            "inc_share_dis_amt": 0,
+            "isEdited": false,
+            "mrp": 0,
+            "sellingprice": 25000,
+            "taxobject_uuid": "ea8a6be0-ce84-4077-b039-f1e663a327d4",
+            "total_excl_charge_per_qty": 5,
+            "totalprice": 50045
+          },
+          "product_code": "TOBLFN402",
+          "product_name": "Toblerone Fruit n Nut",
+          "properties": [],
+          "qty": 2000,
+          "return_qty": 0,
+          "sku": "004UE4LYPB600",
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": 22
+            },
+            {
+              "type": 8,
+              "value": 22
+            }
+          ],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "Toblerone Fruit n Nut"
+        },
+        {
+          "chargesplit": [
+            {
+              "taxsplit": [],
+              "type": 4,
+              "value": 10
+            }
+          ],
+          "comments": [],
+          "delete_reason": 0,
+          "description": "Ferrero Rocher box of 16 pieces",
+          "hsc": null,
+          "ingredients": [],
+          "label_name": null,
+          "line_item_id": 5,
+          "machinecode": 0,
+          "metric": 6,
+          "modifiers": [],
+          "parent_line_item_id": 0,
+          "price": {
+            "addonsprice": 0,
+            "channel_uuid": "2953942b-ef8d-4467-8e16-c3bcc23aeca6",
+            "chargeobject_uuid": "3aaacf59-4481-4416-9e29-9bf3ff70b925",
+            "dis_percent": 0,
+            "editedsellingprice": 0,
+            "excl_dis": 0,
+            "excl_discounted_price_per_qty": 49890,
+            "excl_item_dis_amt": 0,
+            "excl_price_per_qty": 49890,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 0,
+            "inc_price_per_qty": 49900,
+            "inc_share_dis_amt": 0,
+            "isEdited": false,
+            "mrp": 0,
+            "sellingprice": 49900,
+            "taxobject_uuid": "ea8a6be0-ce84-4077-b039-f1e663a327d4",
+            "total_excl_charge_per_qty": 10,
+            "totalprice": 49945
+          },
+          "product_code": "FRCHR9302",
+          "product_name": "Ferrero Rocher 16 nos",
+          "properties": [],
+          "qty": 1000,
+          "return_qty": 0,
+          "sku": "004UE14HJC400",
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": 22
+            },
+            {
+              "type": 8,
+              "value": 22
+            }
+          ],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "Ferrero Rocher 16 nos"
+        }
+      ],
+      "kots": [],
+      "loyalty_partner_uuid": null,
+      "modifiedat": 1545125328,
+      "no_service_charge": false,
+      "online_transaction_id": 0,
+      "orderid": 43,
+      "otp": null,
+      "owner_device_id": 826925553,
+      "parent_uuid": null,
+      "partner_checkout": null,
+      "partner_ref_number": null,
+      "partner_uuid": null,
+      "payments": [],
+      "printcount": 0,
+      "refund_reason": 0,
+      "schedules": [],
+      "splitspec": null,
+      "status": 3,
+      "summary": {
+        "chargesplit": [
+          {
+            "is_exclusive": false,
+            "taxsplit": null,
+            "type": 4,
+            "value": 20
+          }
+        ],
+        "chargetaxsplit": null,
+        "comment": null,
+        "discountsplit": [],
+        "exclusiveChargesplit": [],
+        "exclusiveTaxsplit": [
+          {
+            "is_exclusive": true,
+            "type": 7,
+            "value": 61
+          },
+          {
+            "is_exclusive": true,
+            "type": 8,
+            "value": 61
+          }
+        ],
+        "grand_total": 135021,
+        "number_of_items": 6000,
+        "pending_items": 0,
+        "sub_total": 134900,
+        "taxsplit": [
+          {
+            "is_exclusive": false,
+            "type": 7,
+            "value": 61
+          },
+          {
+            "is_exclusive": false,
+            "type": 8,
+            "value": 61
+          }
+        ],
+        "total_charges": 0,
+        "total_discounts": 0,
+        "total_exclu_discounts": 0,
+        "total_order_charge_n_tax": 0,
+        "total_order_exclu_charge": 0,
+        "total_tax": 121
+      },
+      "tables": [],
+      "token_number": 0,
+      "type": 1,
+      "uuid": "4d2c87ae-1e32-4f18-834a-4866f6b79094"
+    }
+  ],
+  "prefix": "I7E4B2",
+  "summary": {
+    "grand_total": 135021,
+    "is_edited": false,
+    "is_refunded": false,
+    "order_count": 1,
+    "payment_balance": 135000,
+    "sub_total": 134900,
+    "total_charge": 0,
+    "total_dis": 0,
+    "total_tax": 121
+  },
+  "type": 2,
+  "uuid": "acddcdd5-0c62-403c-a9ee-3813f9dd24da"
+}

@@ -1,0 +1,601 @@
+{
+  "createdat": 1545040602,
+  "invoiceId": 2,
+  "modifiedat": 1545040672,
+  "orders": [
+    {
+      "channel_uuid": "2953942b-ef8d-4467-8e16-c3bcc23aeca6",
+      "charge_uuid": null,
+      "chargesplit": [],
+      "comments": [],
+      "createdat": 1545040602,
+      "currency": "INR",
+      "customers": [
+        {
+          "customer": {
+            "contact": {
+              "address": [
+                {
+                  "addr1": "#5, 2nd floor, Sanjeev Shine",
+                  "addr2": "Munireddy Layout",
+                  "country": null,
+                  "city": "Bangalore",
+                  "is_active": true,
+                  "is_default": true,
+                  "latitude": null,
+                  "longtitude": null,
+                  "near": "near State Bank of India",
+                  "nickname": "Home",
+                  "state": "Karnataka",
+                  "street": "Panathur Main Road, Kadubeesanahalli",
+                  "type": 0,
+                  "uuid": "084661b7-68c3-4c7b-8b60-97425a6f28c1",
+                  "zip": "560103"
+                }
+              ],
+              "email": [
+                {
+                  "email": "smartretail@paytm.com",
+                  "is_active": true,
+                  "is_default": true,
+                  "type": 0,
+                  "uuid": "0c65f592-a433-4d98-8573-864b355d35aa"
+                }
+              ],
+              "is_active": false,
+              "is_default": false,
+              "phone": [
+                {
+                  "ext": "",
+                  "is_active": true,
+                  "is_default": true,
+                  "number": "+919482687455",
+                  "type": 0,
+                  "uuid": "e8f87250-8cfd-4766-949b-f27e363699f1"
+                }
+              ],
+              "urls": []
+            },
+            "name": "SmartRetail Automation",
+            "email_enabled": false,
+            "feedback": null,
+            "firstname": "SmartRetail Automation",
+            "gstin": "29HJGHS6756O2Z5",
+            "image": null,
+            "is_active": true,
+            "lastname": null,
+            "middlename": null,
+            "rating": 0,
+            "sms_enabled": false,
+            "store_uuid": "cd782c84-0cc2-45a6-b9fb-273de7e143ab",
+            "title": null,
+            "uuid": "cd782c84-0cc2-45a6-b9fb-273de7e143ab",
+            "year_of_birth": null
+          },
+          "feedback": "",
+          "rating": 0
+        }
+      ],
+      "details": {
+        "chargedetails": [
+          {
+            "details": [
+              {
+                "inclusive": false,
+                "metric": 1,
+                "name": "service",
+                "scaling_factor": 100,
+                "tax_uuid": "0e53b5c7-fc2e-42ba-a14c-e72fa65dfb12",
+                "type": 3,
+                "value": 300
+              }
+            ],
+            "name": "ServiceCharge",
+            "uuid": "1a69dd0e-6efd-4478-9558-56a0325753bd"
+          }
+        ],
+        "ruledetails": [],
+        "taxdetails": [
+          {
+            "details": [],
+            "name": "Tax0",
+            "uuid": "c7a27267-057e-49d0-ab28-c77fd0a1d657"
+          },
+          {
+            "details": [],
+            "name": "GST 0",
+            "uuid": "0e53b5c7-fc2e-42ba-a14c-e72fa65dfb12"
+          },
+          {
+            "details": [
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "CGST",
+                "scaling_factor": 100,
+                "type": 8,
+                "value": 450
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "SGST",
+                "scaling_factor": 100,
+                "type": 7,
+                "value": 450
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "IGST",
+                "scaling_factor": 100,
+                "type": 9,
+                "value": 900
+              }
+            ],
+            "name": "TaxAutomation1",
+            "uuid": "ea8a6be0-ce84-4077-b039-f1e663a327d4"
+          },
+          {
+            "details": [
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "CGST",
+                "scaling_factor": 100,
+                "type": 8,
+                "value": 250
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "IGST",
+                "scaling_factor": 100,
+                "type": 9,
+                "value": 450
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "SGST",
+                "scaling_factor": 100,
+                "type": 7,
+                "value": 250
+              }
+            ],
+            "name": "TaxAutomation2",
+            "uuid": "30259179-9ae5-4a02-bde8-f36b4727bfa4"
+          }
+        ]
+      },
+      "device_id": 826925553,
+      "discard_reason": 0,
+      "discounts": [],
+      "employees": [
+        {
+          "name": "Neeshima",
+          "rank": 0,
+          "uuid": "aec758c6-c5ee-4c0b-8c66-ac19c4e62875"
+        }
+      ],
+      "inter_state": false,
+      "items": [
+        {
+          "chargesplit": [],
+          "comments": [],
+          "delete_reason": 0,
+          "description": null,
+          "hsc": null,
+          "ingredients": [],
+          "label_name": null,
+          "line_item_id": 1,
+          "machinecode": 0,
+          "metric": 3,
+          "modifiers": [],
+          "parent_line_item_id": 0,
+          "price": {
+            "addonsprice": 0,
+            "channel_uuid": "2953942b-ef8d-4467-8e16-c3bcc23aeca6",
+            "chargeobject_uuid": null,
+            "dis_percent": 0,
+            "editedsellingprice": 0,
+            "excl_dis": 0,
+            "excl_discounted_price_per_qty": 9000,
+            "excl_item_dis_amt": 0,
+            "excl_price_per_qty": 9000,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 0,
+            "inc_price_per_qty": 9000,
+            "inc_share_dis_amt": 0,
+            "isEdited": false,
+            "mrp": 0,
+            "sellingprice": 9000,
+            "taxobject_uuid": "ea8a6be0-ce84-4077-b039-f1e663a327d4",
+            "total_excl_charge_per_qty": 0,
+            "totalprice": 9008
+          },
+          "product_code": "BRP480",
+          "product_name": "Basmati Rice",
+          "properties": [],
+          "qty": 1000,
+          "return_qty": 0,
+          "sku": "004UETPR4KD00",
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": 4
+            },
+            {
+              "type": 8,
+              "value": 4
+            }
+          ],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "Basmati Rice"
+        },
+        {
+          "chargesplit": [],
+          "comments": [],
+          "delete_reason": 0,
+          "description": null,
+          "hsc": null,
+          "ingredients": [],
+          "label_name": null,
+          "line_item_id": 2,
+          "machinecode": 0,
+          "metric": 8,
+          "modifiers": [],
+          "parent_line_item_id": 0,
+          "price": {
+            "addonsprice": 0,
+            "channel_uuid": "2953942b-ef8d-4467-8e16-c3bcc23aeca6",
+            "chargeobject_uuid": null,
+            "dis_percent": 0,
+            "editedsellingprice": 0,
+            "excl_dis": 0,
+            "excl_discounted_price_per_qty": 4000,
+            "excl_item_dis_amt": 0,
+            "excl_price_per_qty": 4000,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 0,
+            "inc_price_per_qty": 4000,
+            "inc_share_dis_amt": 0,
+            "isEdited": false,
+            "mrp": 0,
+            "sellingprice": 4000,
+            "taxobject_uuid": "ea8a6be0-ce84-4077-b039-f1e663a327d4",
+            "total_excl_charge_per_qty": 0,
+            "totalprice": 4004
+          },
+          "product_code": "BTNMSHR100",
+          "product_name": "Mushrooms 100g",
+          "properties": [],
+          "qty": 1000,
+          "return_qty": 0,
+          "sku": "004UEKOXDTT00",
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": 2
+            },
+            {
+              "type": 8,
+              "value": 2
+            }
+          ],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "Mushrooms 100g"
+        },
+        {
+          "chargesplit": [],
+          "comments": [],
+          "delete_reason": 0,
+          "description": null,
+          "hsc": null,
+          "ingredients": [],
+          "label_name": null,
+          "line_item_id": 3,
+          "machinecode": 0,
+          "metric": 3,
+          "modifiers": [],
+          "parent_line_item_id": 0,
+          "price": {
+            "addonsprice": 0,
+            "channel_uuid": "2953942b-ef8d-4467-8e16-c3bcc23aeca6",
+            "chargeobject_uuid": null,
+            "dis_percent": 0,
+            "editedsellingprice": 0,
+            "excl_dis": 0,
+            "excl_discounted_price_per_qty": 1900,
+            "excl_item_dis_amt": 0,
+            "excl_price_per_qty": 1900,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 0,
+            "inc_price_per_qty": 1900,
+            "inc_share_dis_amt": 0,
+            "isEdited": false,
+            "mrp": 0,
+            "sellingprice": 1900,
+            "taxobject_uuid": "c7a27267-057e-49d0-ab28-c77fd0a1d657",
+            "total_excl_charge_per_qty": 0,
+            "totalprice": 1900
+          },
+          "product_code": "O42042",
+          "product_name": "Onion",
+          "properties": [],
+          "qty": 1000,
+          "return_qty": 0,
+          "sku": "004UEDE4SW400",
+          "taxsplit": [],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "Onion"
+        },
+        {
+          "chargesplit": [],
+          "comments": [],
+          "delete_reason": 0,
+          "description": null,
+          "hsc": null,
+          "ingredients": [],
+          "label_name": null,
+          "line_item_id": 4,
+          "machinecode": 0,
+          "metric": 3,
+          "modifiers": [],
+          "parent_line_item_id": 0,
+          "price": {
+            "addonsprice": 0,
+            "channel_uuid": "2953942b-ef8d-4467-8e16-c3bcc23aeca6",
+            "chargeobject_uuid": null,
+            "dis_percent": 0,
+            "editedsellingprice": 0,
+            "excl_dis": 0,
+            "excl_discounted_price_per_qty": 6000,
+            "excl_item_dis_amt": 0,
+            "excl_price_per_qty": 6000,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 0,
+            "inc_price_per_qty": 6000,
+            "inc_share_dis_amt": 0,
+            "isEdited": false,
+            "mrp": 0,
+            "sellingprice": 6000,
+            "taxobject_uuid": "30259179-9ae5-4a02-bde8-f36b4727bfa4",
+            "total_excl_charge_per_qty": 0,
+            "totalprice": 6003
+          },
+          "product_code": "KERMT123",
+          "product_name": "Red Boiled Rice",
+          "properties": [],
+          "qty": 1000,
+          "return_qty": 0,
+          "sku": "004UEQQC55F00",
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": 2
+            },
+            {
+              "type": 8,
+              "value": 2
+            }
+          ],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "Red Boiled Rice"
+        },
+        {
+          "chargesplit": [
+            {
+              "taxsplit": [],
+              "type": 3,
+              "value": 9
+            }
+          ],
+          "comments": [],
+          "delete_reason": 0,
+          "description": null,
+          "hsc": null,
+          "ingredients": [],
+          "label_name": null,
+          "line_item_id": 5,
+          "machinecode": 0,
+          "metric": 5,
+          "modifiers": [],
+          "parent_line_item_id": 0,
+          "price": {
+            "addonsprice": 0,
+            "channel_uuid": "2953942b-ef8d-4467-8e16-c3bcc23aeca6",
+            "chargeobject_uuid": "1a69dd0e-6efd-4478-9558-56a0325753bd",
+            "dis_percent": 0,
+            "editedsellingprice": 0,
+            "excl_dis": 0,
+            "excl_discounted_price_per_qty": 30000,
+            "excl_item_dis_amt": 0,
+            "excl_price_per_qty": 30000,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 0,
+            "inc_price_per_qty": 30000,
+            "inc_share_dis_amt": 0,
+            "isEdited": false,
+            "mrp": 0,
+            "sellingprice": 30000,
+            "taxobject_uuid": "ea8a6be0-ce84-4077-b039-f1e663a327d4",
+            "total_excl_charge_per_qty": 9,
+            "totalprice": 30036
+          },
+          "product_code": "VPLATTR390",
+          "product_name": "Veg Platter",
+          "properties": [],
+          "qty": 0,
+          "return_qty": 0,
+          "sku": "004UEX6EGIW00",
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": 14
+            },
+            {
+              "type": 8,
+              "value": 14
+            }
+          ],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "Veg Platter"
+        }
+      ],
+      "kots": [],
+      "loyalty_partner_uuid": null,
+      "modifiedat": 1545040672,
+      "no_service_charge": false,
+      "online_transaction_id": 0,
+      "orderid": 2,
+      "otp": null,
+      "owner_device_id": 826925553,
+      "parent_uuid": null,
+      "partner_checkout": null,
+      "partner_ref_number": null,
+      "partner_uuid": null,
+      "payments": [
+        {
+          "amount": 20900,
+          "card_num": "",
+          "checkout_uuid": null,
+          "conversion_factor": 10000,
+          "coupon_type": 0,
+          "createdat": 1545040667,
+          "currency": "INR",
+          "device_id": 826925553,
+          "edited_emp_uuid": null,
+          "email": null,
+          "method": 1,
+          "mode": 1,
+          "modifiedat": 1545040667,
+          "parent_amount": 0,
+          "parent_uuid": null,
+          "payment_init_uuid": null,
+          "payment_system_connected": false,
+          "phone_number": null,
+          "ref_id": "",
+          "reference_id": null,
+          "status": 4,
+          "trnx_reference": null,
+          "trnx_uuid": null,
+          "type": 1,
+          "uuid": "0d05f77d-9458-4544-b672-78a2f690954d"
+        },
+        {
+          "amount": 15,
+          "card_num": "",
+          "checkout_uuid": null,
+          "conversion_factor": 10000,
+          "coupon_type": 0,
+          "createdat": 1545040672,
+          "currency": "INR",
+          "device_id": 826925553,
+          "edited_emp_uuid": null,
+          "email": null,
+          "method": 1,
+          "mode": 5,
+          "modifiedat": 1545040672,
+          "parent_amount": 0,
+          "parent_uuid": null,
+          "payment_init_uuid": null,
+          "payment_system_connected": false,
+          "phone_number": null,
+          "ref_id": "",
+          "reference_id": null,
+          "status": 4,
+          "trnx_reference": null,
+          "trnx_uuid": null,
+          "type": 1,
+          "uuid": "2626bbf7-ca53-4af7-a207-ce865406e030"
+        }
+      ],
+      "printcount": 0,
+      "refund_reason": 0,
+      "schedules": [],
+      "splitspec": null,
+      "status": 7,
+      "summary": {
+        "chargesplit": [],
+        "chargetaxsplit": null,
+        "comment": null,
+        "discountsplit": [],
+        "exclusiveChargesplit": [],
+        "exclusiveTaxsplit": [
+          {
+            "is_exclusive": true,
+            "type": 7,
+            "value": 7
+          },
+          {
+            "is_exclusive": true,
+            "type": 8,
+            "value": 7
+          }
+        ],
+        "grand_total": 20915,
+        "number_of_items": 4000,
+        "pending_items": 0,
+        "sub_total": 20900,
+        "taxsplit": [
+          {
+            "is_exclusive": false,
+            "type": 7,
+            "value": 7
+          },
+          {
+            "is_exclusive": false,
+            "type": 8,
+            "value": 7
+          }
+        ],
+        "total_charges": 0,
+        "total_discounts": 0,
+        "total_exclu_discounts": 0,
+        "total_order_charge_n_tax": 0,
+        "total_order_exclu_charge": 0,
+        "total_tax": 15
+      },
+      "tables": [],
+      "token_number": 0,
+      "type": 1,
+      "uuid": "4d4591f1-804d-41a8-bdf9-04547205ef1d"
+    }
+  ],
+  "prefix": "I7E4B2",
+  "summary": {
+    "grand_total": 20915,
+    "is_edited": false,
+    "is_refunded": false,
+    "order_count": 1,
+    "payment_balance": 0,
+    "sub_total": 20900,
+    "total_charge": 0,
+    "total_dis": 0,
+    "total_tax": 15
+  },
+  "type": 2,
+  "uuid": "a4d19f58-5ecb-40dc-b875-8b5f27316ba8"
+}

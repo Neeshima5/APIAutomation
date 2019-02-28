@@ -1,0 +1,123 @@
+[
+  {
+    "owner": {
+      "phone_number": "9343932742",
+      "login_credentials": {
+        "web_password": "APIAutomation",
+        "device_password": "1234"
+      },
+      "alternate_address": {
+        "city": "",
+        "state": "",
+        "street": "",
+        "addr2": "",
+        "zip": "",
+        "addr1": "",
+        "country": "",
+        "near": ""
+      },
+      "stores": [
+        {
+          "branches": [
+            {
+              "paytm_mall_dummy_pid": "",
+              "paytm_mall_warehouse_id": "",
+              "address": {
+                "city": "Bangalore",
+                "state": "Karnataka",
+                "street": "Marathahalli",
+                "addr2": "",
+                "zip": "560100",
+                "addr1": "9, HomeTown",
+                "country": "India",
+                "near": ""
+              },
+              "timezone": "Asia/Kolkata",
+              "phone_numbers": [],
+              "branch_type": "Books",
+              "gst": "03AAACB5343E1ZB",
+              "name": "BranchA",
+              "paytm_merchant_id": "",
+              "invoice_header_line_1": "",
+              "paytm_mall_merchant_id": "",
+              "affiliate": "paytm",
+              "invoice_footer_line_1": ""
+            },
+            {
+              "paytm_mall_dummy_pid": "",
+              "paytm_mall_warehouse_id": "",
+              "address": {
+                "city": "Bangalore",
+                "state": "Karnataka",
+                "street": "Kadubeesanahalli",
+                "addr2": "",
+                "zip": "560103",
+                "addr1": "9, Salarpuria Aura",
+                "country": "India",
+                "near": ""
+              },
+              "timezone": "Asia/Kolkata",
+              "phone_numbers": [],
+              "branch_type": "Books",
+              "gst": "03AAACB5343E1ZB",
+              "name": "BranchB",
+              "paytm_merchant_id": "",
+              "invoice_header_line_1": "",
+              "paytm_mall_merchant_id": "",
+              "affiliate": "others",
+              "invoice_footer_line_1": ""
+            },
+            {
+              "paytm_mall_dummy_pid": "",
+              "paytm_mall_warehouse_id": "",
+              "address": {
+                "city": "Bangalore",
+                "state": "Karnataka",
+                "street": "HSR Layout Sector 2",
+                "addr2": "Parangipalaya",
+                "zip": "560102",
+                "addr1": "9, Sanjeev Shine",
+                "country": "India",
+                "near": ""
+              },
+              "timezone": "Asia/Kolkata",
+              "phone_numbers": [],
+              "branch_type": "Books",
+              "gst": "03AAACB5343E1ZB",
+              "name": "BranchC",
+              "paytm_merchant_id": "",
+              "invoice_header_line_1": "",
+              "paytm_mall_merchant_id": "",
+              "affiliate": "paytm",
+              "invoice_footer_line_1": ""
+            }
+          ],
+          "name": "Store_TestMultipleBranch",
+          "address": {
+            "city": "Bangalore",
+            "state": "Karnataka",
+            "street": "HSR Layout Sector 2",
+            "addr2": "Parangipalaya",
+            "zip": "560102",
+            "addr1": "9, Sanjeev Shine",
+            "country": "India",
+            "near": ""
+          }
+        }
+      ],
+      "name": "Owner_TestSingleStoreMultipleBranch",
+      "registered_address": {
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "street": "Panathur Main Road",
+        "addr2": "Munireddy Layout",
+        "zip": "560103",
+        "addr1": "9, Sanjeev Sadan",
+        "country": "India",
+        "near": "near SBI"
+      },
+      "email": "test_singlestoremultibranch_owner@gmail.com",
+      "gst": "03AAACB5343E1ZB"
+    }
+  }
+]

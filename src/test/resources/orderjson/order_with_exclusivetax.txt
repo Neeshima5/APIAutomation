@@ -1,0 +1,388 @@
+{
+  "createdat": 1545043869,
+  "invoiceId": 7,
+  "modifiedat": 1545043908,
+  "orders": [
+    {
+      "channel_uuid": "5fbf055d-42ed-4b4f-92ff-543b8160ee25",
+      "charge_uuid": null,
+      "chargesplit": [],
+      "comments": [],
+      "createdat": 1545043869,
+      "currency": "INR",
+      "customers": [
+        {
+          "customer": {
+            "contact": {
+              "address": [],
+              "email": [],
+              "is_active": false,
+              "is_default": false,
+              "phone": [
+                {
+                  "ext": "",
+                  "is_active": true,
+                  "is_default": true,
+                  "number": "+919482686883",
+                  "type": 0,
+                  "uuid": "95d613e3-c319-46ef-bbd1-616ec9fefddb"
+                }
+              ],
+              "urls": []
+            },
+            "name": "",
+            "email_enabled": false,
+            "feedback": null,
+            "firstname": "",
+            "gstin": null,
+            "image": null,
+            "is_active": true,
+            "lastname": null,
+            "middlename": null,
+            "rating": 0,
+            "sms_enabled": false,
+            "store_uuid": "f4c9559b-cd68-4797-9bbc-5272b9815a6b",
+            "title": null,
+            "uuid": "f4c9559b-cd68-4797-9bbc-5272b9815a6b",
+            "year_of_birth": null
+          },
+          "feedback": "",
+          "rating": 0
+        }
+      ],
+      "details": {
+        "chargedetails": [
+          {
+            "details": [
+              {
+                "inclusive": false,
+                "metric": 2,
+                "name": "packaging",
+                "scaling_factor": 100,
+                "tax_uuid": "0e53b5c7-fc2e-42ba-a14c-e72fa65dfb12",
+                "type": 1,
+                "value": 1000
+              },
+              {
+                "inclusive": false,
+                "metric": 2,
+                "name": "delivery",
+                "scaling_factor": 100,
+                "tax_uuid": "0e53b5c7-fc2e-42ba-a14c-e72fa65dfb12",
+                "type": 2,
+                "value": 1500
+              },
+              {
+                "inclusive": false,
+                "metric": 1,
+                "name": "other",
+                "scaling_factor": 100,
+                "tax_uuid": "0e53b5c7-fc2e-42ba-a14c-e72fa65dfb12",
+                "type": 4,
+                "value": 200
+              }
+            ],
+            "name": "ExclusiveCharge",
+            "uuid": "0b6728bb-f27e-4cbf-b7fb-f7094433a6a9"
+          }
+        ],
+        "ruledetails": [],
+        "taxdetails": [
+          {
+            "details": [],
+            "name": "GST 0",
+            "uuid": "0e53b5c7-fc2e-42ba-a14c-e72fa65dfb12"
+          },
+          {
+            "details": [
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "CGST",
+                "scaling_factor": 100,
+                "type": 8,
+                "value": 450
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "SGST",
+                "scaling_factor": 100,
+                "type": 7,
+                "value": 450
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "IGST",
+                "scaling_factor": 100,
+                "type": 9,
+                "value": 900
+              }
+            ],
+            "name": "TaxAutomation1",
+            "uuid": "ea8a6be0-ce84-4077-b039-f1e663a327d4"
+          }
+        ]
+      },
+      "device_id": 826925553,
+      "discard_reason": 0,
+      "discounts": [],
+      "employees": [
+        {
+          "name": "Neeshima",
+          "rank": 0,
+          "uuid": "aec758c6-c5ee-4c0b-8c66-ac19c4e62875"
+        }
+      ],
+      "inter_state": false,
+      "items": [
+        {
+          "chargesplit": [
+            {
+              "taxsplit": [],
+              "type": 1,
+              "value": 1000
+            },
+            {
+              "taxsplit": [],
+              "type": 2,
+              "value": 1500
+            },
+            {
+              "taxsplit": [],
+              "type": 4,
+              "value": 4
+            }
+          ],
+          "comments": [],
+          "delete_reason": 0,
+          "description": null,
+          "hsc": null,
+          "ingredients": [],
+          "label_name": null,
+          "line_item_id": 1,
+          "machinecode": 0,
+          "metric": 5,
+          "modifiers": [],
+          "parent_line_item_id": 0,
+          "price": {
+            "addonsprice": 0,
+            "channel_uuid": "5fbf055d-42ed-4b4f-92ff-543b8160ee25",
+            "chargeobject_uuid": "0b6728bb-f27e-4cbf-b7fb-f7094433a6a9",
+            "dis_percent": 0,
+            "editedsellingprice": 0,
+            "excl_dis": 0,
+            "excl_discounted_price_per_qty": 20000,
+            "excl_item_dis_amt": 0,
+            "excl_price_per_qty": 20000,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 0,
+            "inc_price_per_qty": 20000,
+            "inc_share_dis_amt": 0,
+            "isEdited": false,
+            "mrp": 0,
+            "sellingprice": 20000,
+            "taxobject_uuid": "ea8a6be0-ce84-4077-b039-f1e663a327d4",
+            "total_excl_charge_per_qty": 2504,
+            "totalprice": 22522
+          },
+          "product_code": "VKSHPL5430",
+          "product_name": "Veg Kashimiri Pulao",
+          "properties": [],
+          "qty": 1000,
+          "return_qty": 0,
+          "sku": "004UEHBDFM100",
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": 9
+            },
+            {
+              "type": 8,
+              "value": 9
+            }
+          ],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "Veg Kashimiri Pulao"
+        }
+      ],
+      "kots": [],
+      "loyalty_partner_uuid": null,
+      "modifiedat": 1545043908,
+      "no_service_charge": false,
+      "online_transaction_id": 0,
+      "orderid": 10,
+      "otp": null,
+      "owner_device_id": 826925553,
+      "parent_uuid": null,
+      "partner_checkout": null,
+      "partner_ref_number": null,
+      "partner_uuid": null,
+      "payments": [
+        {
+          "amount": 22500,
+          "card_num": "",
+          "checkout_uuid": null,
+          "conversion_factor": 10000,
+          "coupon_type": 0,
+          "createdat": 1545043906,
+          "currency": "INR",
+          "device_id": 826925553,
+          "edited_emp_uuid": null,
+          "email": null,
+          "method": 1,
+          "mode": 1,
+          "modifiedat": 1545043906,
+          "parent_amount": 0,
+          "parent_uuid": null,
+          "payment_init_uuid": null,
+          "payment_system_connected": false,
+          "phone_number": null,
+          "ref_id": "",
+          "reference_id": null,
+          "status": 4,
+          "trnx_reference": null,
+          "trnx_uuid": null,
+          "type": 1,
+          "uuid": "8c4ee58d-d27a-4716-889e-ea38c7693328"
+        },
+        {
+          "amount": 22,
+          "card_num": "",
+          "checkout_uuid": null,
+          "conversion_factor": 10000,
+          "coupon_type": 0,
+          "createdat": 1545043908,
+          "currency": "INR",
+          "device_id": 826925553,
+          "edited_emp_uuid": null,
+          "email": null,
+          "method": 1,
+          "mode": 5,
+          "modifiedat": 1545043908,
+          "parent_amount": 0,
+          "parent_uuid": null,
+          "payment_init_uuid": null,
+          "payment_system_connected": false,
+          "phone_number": null,
+          "ref_id": "",
+          "reference_id": null,
+          "status": 4,
+          "trnx_reference": null,
+          "trnx_uuid": null,
+          "type": 1,
+          "uuid": "7bd9ad4d-8202-46dc-b8b6-7ec6f60890e9"
+        }
+      ],
+      "printcount": 0,
+      "refund_reason": 0,
+      "schedules": [],
+      "splitspec": null,
+      "status": 7,
+      "summary": {
+        "chargesplit": [
+          {
+            "is_exclusive": false,
+            "taxsplit": null,
+            "type": 1,
+            "value": 1000
+          },
+          {
+            "is_exclusive": false,
+            "taxsplit": null,
+            "type": 2,
+            "value": 1500
+          },
+          {
+            "is_exclusive": false,
+            "taxsplit": null,
+            "type": 4,
+            "value": 4
+          }
+        ],
+        "chargetaxsplit": null,
+        "comment": null,
+        "discountsplit": [],
+        "exclusiveChargesplit": [
+          {
+            "is_exclusive": true,
+            "taxsplit": null,
+            "type": 1,
+            "value": 1000
+          },
+          {
+            "is_exclusive": true,
+            "taxsplit": null,
+            "type": 2,
+            "value": 1500
+          },
+          {
+            "is_exclusive": true,
+            "taxsplit": null,
+            "type": 4,
+            "value": 4
+          }
+        ],
+        "exclusiveTaxsplit": [
+          {
+            "is_exclusive": true,
+            "type": 7,
+            "value": 9
+          },
+          {
+            "is_exclusive": true,
+            "type": 8,
+            "value": 9
+          }
+        ],
+        "grand_total": 22522,
+        "number_of_items": 1000,
+        "pending_items": 0,
+        "sub_total": 20000,
+        "taxsplit": [
+          {
+            "is_exclusive": false,
+            "type": 7,
+            "value": 9
+          },
+          {
+            "is_exclusive": false,
+            "type": 8,
+            "value": 9
+          }
+        ],
+        "total_charges": 2504,
+        "total_discounts": 0,
+        "total_exclu_discounts": 0,
+        "total_order_charge_n_tax": 0,
+        "total_order_exclu_charge": 0,
+        "total_tax": 18
+      },
+      "tables": [],
+      "token_number": 0,
+      "type": 1,
+      "uuid": "b4031c79-9a38-4b47-a38d-d1a2fcb2914a"
+    }
+  ],
+  "prefix": "I7E4B2",
+  "summary": {
+    "grand_total": 22522,
+    "is_edited": false,
+    "is_refunded": false,
+    "order_count": 1,
+    "payment_balance": 0,
+    "sub_total": 20000,
+    "total_charge": 2504,
+    "total_dis": 0,
+    "total_tax": 18
+  },
+  "type": 2,
+  "uuid": "2e06773b-3efe-4bd6-b4fc-118e70f5ab71"
+}

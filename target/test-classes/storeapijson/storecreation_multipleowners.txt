@@ -1,0 +1,221 @@
+[
+  {
+    "owner": {
+      "phone_number": "9343932742",
+      "login_credentials": {
+        "web_password": "APIAutomation",
+        "device_password": "1234"
+      },
+      "alternate_address": {
+        "city": "",
+        "state": "",
+        "street": "",
+        "addr2": "",
+        "zip": "",
+        "addr1": "",
+        "country": "",
+        "near": ""
+      },
+      "stores": [
+        {
+          "branches": [
+            {
+              "paytm_mall_dummy_pid": "M840G9DI8HIB00",
+              "paytm_mall_warehouse_id": "PTM380J8400",
+              "address": {
+                "city": "Bangalore",
+                "state": "Karnataka",
+                "street": "Panathur Main Road",
+                "addr2": "Munireddy Layout",
+                "zip": "560103",
+                "addr1": "9, Sanjeev Sadan",
+                "country": "India",
+                "near": "near SBI"
+              },
+              "timezone": "Asia/Kolkata",
+              "phone_numbers": ["9090909090", "7878787878", "9898989898"],
+              "branch_type": "Pharma",
+              "gst": "24AAACB5343E1Z7",
+              "name": "Branch_OwnerA",
+              "paytm_merchant_id": "ptm3821f34299",
+              "invoice_header_line_1": "Welcome",
+              "paytm_mall_merchant_id": "",
+              "affiliate": "paytm",
+              "invoice_footer_line_1": "Thank you!!!"
+            }
+          ],
+          "name": "Store_OwnerA",
+          "address": {
+            "city": "Bangalore",
+            "state": "Karnataka",
+            "street": "Panathur Main Road",
+            "addr2": "Munireddy Layout",
+            "zip": "560103",
+            "addr1": "9, Sanjeev Sadan",
+            "country": "India",
+            "near": "near SBI"
+          }
+        }
+      ],
+      "name": "OwnerA",
+      "registered_address": {
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "street": "Panathur Main Road",
+        "addr2": "Munireddy Layout",
+        "zip": "560103",
+        "addr1": "9, Sanjeev Sadan",
+        "country": "India",
+        "near": "near SBI"
+      },
+      "email": "ownerA@gmail.com",
+      "gst": "24AAACB5343E1Z7"
+    }
+  },
+  {
+    "owner": {
+      "phone_number": "9343932742",
+      "login_credentials": {
+        "web_password": "APIAutomation",
+        "device_password": "6789"
+      },
+      "alternate_address": {
+        "city": "",
+        "state": "",
+        "street": "",
+        "addr2": "",
+        "zip": "",
+        "addr1": "",
+        "country": "",
+        "near": ""
+      },
+      "stores": [
+        {
+          "branches": [
+            {
+              "paytm_mall_dummy_pid": "",
+              "paytm_mall_warehouse_id": "",
+              "address": {
+                "city": "Bangalore",
+                "state": "Karnataka",
+                "street": "Panathur Main Road",
+                "addr2": "Munireddy Layout",
+                "zip": "560103",
+                "addr1": "9, Sanjeev Sadan",
+                "country": "India",
+                "near": "near SBI"
+              },
+              "timezone": "Asia/Kolkata",
+              "phone_numbers": [],
+              "branch_type": "Books",
+              "gst": "06AAACB5343E1Z5",
+              "name": "Branch_OwnerB",
+              "paytm_merchant_id": "",
+              "invoice_header_line_1": "Reçu",
+              "paytm_mall_merchant_id": "",
+              "affiliate": "paytm",
+              "invoice_footer_line_1": "©Paytm"
+            }
+          ],
+          "name": "Store_OwnerB",
+          "address": {
+            "city": "Bangalore",
+            "state": "Karnataka",
+            "street": "Panathur Main Road",
+            "addr2": "Munireddy Layout",
+            "zip": "560103",
+            "addr1": "9, Sanjeev Sadan",
+            "country": "India",
+            "near": "near SBI"
+          }
+        }
+      ],
+      "name": "OwnerB",
+      "registered_address": {
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "street": "Panathur Main Road",
+        "addr2": "Munireddy Layout",
+        "zip": "560103",
+        "addr1": "9, Sanjeev Sadan",
+        "country": "India",
+        "near": "near SBI"
+      },
+      "email": "ownerB@gmail.com",
+      "gst": "06AAACB5343E1Z5"
+    }
+  },
+  {
+    "owner": {
+      "phone_number": "9343932742",
+      "login_credentials": {
+        "web_password": "APIAutomation",
+        "device_password": "0000"
+      },
+      "alternate_address": {
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "street": "Bull Temple Road, Basavanagudi",
+        "addr2": "",
+        "zip": "560019",
+        "addr1": "101, BSR Apartments",
+        "country": "India",
+        "near": ""
+      },
+      "stores": [
+        {
+          "branches": [
+            {
+              "paytm_mall_dummy_pid": "hiw8newf3r323",
+              "paytm_mall_warehouse_id": "skjd99302fbqw3",
+              "address": {
+                "city": "Bangalore",
+                "state": "Karnataka",
+                "street": "Panathur Main Road",
+                "addr2": "Munireddy Layout",
+                "zip": "560103",
+                "addr1": "9, Sanjeev Sadan",
+                "country": "India",
+                "near": "near SBI"
+              },
+              "timezone": "Asia/Kolkata",
+              "phone_numbers": [],
+              "branch_type": "Cosmetics",
+              "gst": "29AAACB5343E2ZW",
+              "name": "Branch_OwnerC",
+              "paytm_merchant_id": "",
+              "invoice_header_line_1": "",
+              "paytm_mall_merchant_id": "",
+              "affiliate": "paytm",
+              "invoice_footer_line_1": ""
+            }
+          ],
+          "name": "Store_OwnerC",
+          "address": {
+            "city": "Bangalore",
+            "state": "Karnataka",
+            "street": "Panathur Main Road",
+            "addr2": "Munireddy Layout",
+            "zip": "560103",
+            "addr1": "9, Sanjeev Sadan",
+            "country": "India",
+            "near": "near SBI"
+          }
+        }
+      ],
+      "name": "OwnerC",
+      "registered_address": {
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "street": "Panathur Main Road",
+        "addr2": "Munireddy Layout",
+        "zip": "560103",
+        "addr1": "9, Sanjeev Sadan",
+        "country": "India",
+        "near": "near SBI"
+      },
+      "email": "ownerC@gmail.com",
+      "gst": "29AAACB5343E2ZW"
+    }
+  }
+]

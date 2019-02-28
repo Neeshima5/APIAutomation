@@ -1,0 +1,935 @@
+{
+  "createdat": 1544597999,
+  "invoiceId": 342,
+  "modifiedat": 1544598168,
+  "orders": [
+    {
+      "channel_uuid": "105f9856-622f-4074-88d0-b12ffdc398f1",
+      "charge_uuid": null,
+      "chargesplit": [],
+      "comments": [],
+      "createdat": 1544597999,
+      "currency": "INR",
+      "customers": [],
+      "details": {
+        "chargedetails": [
+          {
+            "details": [
+              {
+                "inclusive": true,
+                "metric": 1,
+                "name": "packaging",
+                "scaling_factor": 10000,
+                "tax_uuid": "920ee6bc-618b-435f-9f76-b6b997292433",
+                "type": 1,
+                "value": 500
+              },
+              {
+                "inclusive": true,
+                "metric": 1,
+                "name": "service",
+                "scaling_factor": 10000,
+                "tax_uuid": "920ee6bc-618b-435f-9f76-b6b997292433",
+                "type": 3,
+                "value": 500
+              }
+            ],
+            "name": "Icharge",
+            "uuid": "32880953-a83c-4f59-b7a8-519a0efe5236"
+          },
+          {
+            "details": [
+              {
+                "inclusive": false,
+                "metric": 1,
+                "name": "packaging",
+                "scaling_factor": 10000,
+                "tax_uuid": "d68bd69a-2c6a-4898-ae62-5afcc8f47cfb",
+                "type": 1,
+                "value": 500
+              },
+              {
+                "inclusive": false,
+                "metric": 1,
+                "name": "service",
+                "scaling_factor": 10000,
+                "tax_uuid": "d68bd69a-2c6a-4898-ae62-5afcc8f47cfb",
+                "type": 3,
+                "value": 500
+              }
+            ],
+            "name": "Echarge",
+            "uuid": "c7c8276a-f515-4916-baa1-bd71b6801c89"
+          }
+        ],
+        "ruledetails": [],
+        "taxdetails": [
+          {
+            "details": [
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "CGST",
+                "scaling_factor": 10000,
+                "type": 8,
+                "value": 500
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "IGST",
+                "scaling_factor": 10000,
+                "type": 9,
+                "value": 1000
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "SGST",
+                "scaling_factor": 10000,
+                "type": 7,
+                "value": 500
+              }
+            ],
+            "name": "ETax",
+            "uuid": "d68bd69a-2c6a-4898-ae62-5afcc8f47cfb"
+          },
+          {
+            "details": [
+              {
+                "children": [],
+                "inclusive": true,
+                "metric": 1,
+                "name": "CGST",
+                "scaling_factor": 10000,
+                "type": 8,
+                "value": 500
+              },
+              {
+                "children": [],
+                "inclusive": true,
+                "metric": 1,
+                "name": "IGST",
+                "scaling_factor": 10000,
+                "type": 9,
+                "value": 1000
+              },
+              {
+                "children": [],
+                "inclusive": true,
+                "metric": 1,
+                "name": "SGST",
+                "scaling_factor": 10000,
+                "type": 7,
+                "value": 500
+              }
+            ],
+            "name": "ITax",
+            "uuid": "7792487e-d6ab-4a40-871f-4fd86c988de7"
+          },
+          {
+            "details": [],
+            "name": "Tax0",
+            "uuid": "920ee6bc-618b-435f-9f76-b6b997292433"
+          }
+        ]
+      },
+      "device_id": 730071615,
+      "discard_reason": 0,
+      "discounts": [],
+      "employees": [
+        {
+          "name": "Anuj",
+          "rank": 0,
+          "uuid": "e03ec039-44b5-488a-b51f-1928553afe3f"
+        }
+      ],
+      "inter_state": false,
+      "items": [
+        {
+          "chargesplit": [
+            {
+              "taxsplit": [],
+              "type": 1,
+              "value": 833
+            },
+            {
+              "taxsplit": [],
+              "type": 3,
+              "value": 833
+            }
+          ],
+          "comments": [],
+          "delete_reason": 0,
+          "description": null,
+          "hsc": "1601",
+          "ingredients": [],
+          "label_name": null,
+          "line_item_id": 1,
+          "machinecode": 417,
+          "metric": 5,
+          "modifiers": [],
+          "parent_line_item_id": 0,
+          "price": {
+            "addonsprice": 0,
+            "channel_uuid": "105f9856-622f-4074-88d0-b12ffdc398f1",
+            "chargeobject_uuid": "32880953-a83c-4f59-b7a8-519a0efe5236",
+            "dis_percent": 0,
+            "editedsellingprice": 0,
+            "excl_dis": 0,
+            "excl_discounted_price_per_qty": 16667,
+            "excl_item_dis_amt": 0,
+            "excl_price_per_qty": 16667,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 0,
+            "inc_price_per_qty": 20000,
+            "inc_share_dis_amt": 0,
+            "isEdited": false,
+            "mrp": 0,
+            "sellingprice": 20000,
+            "taxobject_uuid": "7792487e-d6ab-4a40-871f-4fd86c988de7",
+            "total_excl_charge_per_qty": 1667,
+            "totalprice": 20000
+          },
+          "product_code": "chf01",
+          "product_name": "Veg Fried Rice",
+          "properties": [],
+          "qty": 1000,
+          "return_qty": 0,
+          "sku": "000064OUFQH00",
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": 833
+            },
+            {
+              "type": 8,
+              "value": 833
+            }
+          ],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "Veg Fried Rice"
+        },
+        {
+          "chargesplit": [
+            {
+              "taxsplit": [],
+              "type": 1,
+              "value": 455
+            },
+            {
+              "taxsplit": [],
+              "type": 3,
+              "value": 455
+            }
+          ],
+          "comments": [],
+          "delete_reason": 0,
+          "description": null,
+          "hsc": null,
+          "ingredients": [],
+          "label_name": null,
+          "line_item_id": 2,
+          "machinecode": 30,
+          "metric": 3,
+          "modifiers": [],
+          "parent_line_item_id": 0,
+          "price": {
+            "addonsprice": 0,
+            "channel_uuid": "105f9856-622f-4074-88d0-b12ffdc398f1",
+            "chargeobject_uuid": "32880953-a83c-4f59-b7a8-519a0efe5236",
+            "dis_percent": 0,
+            "editedsellingprice": 0,
+            "excl_dis": 0,
+            "excl_discounted_price_per_qty": 9091,
+            "excl_item_dis_amt": 0,
+            "excl_price_per_qty": 9091,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 0,
+            "inc_price_per_qty": 10000,
+            "inc_share_dis_amt": 0,
+            "isEdited": false,
+            "mrp": 0,
+            "sellingprice": 10000,
+            "taxobject_uuid": "d68bd69a-2c6a-4898-ae62-5afcc8f47cfb",
+            "total_excl_charge_per_qty": 909,
+            "totalprice": 10909
+          },
+          "product_code": "EE01",
+          "product_name": "paneer tikka(ETax+Icharge)",
+          "properties": [],
+          "qty": 1000,
+          "return_qty": 0,
+          "sku": "00006B34UG600",
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": 455
+            },
+            {
+              "type": 8,
+              "value": 455
+            }
+          ],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "paneer tikka(ETax+Icharge)"
+        },
+        {
+          "chargesplit": [
+            {
+              "taxsplit": [
+                {
+                  "type": 7,
+                  "value": 57
+                },
+                {
+                  "type": 8,
+                  "value": 57
+                }
+              ],
+              "type": 1,
+              "value": 1136
+            },
+            {
+              "taxsplit": [
+                {
+                  "type": 7,
+                  "value": 57
+                },
+                {
+                  "type": 8,
+                  "value": 57
+                }
+              ],
+              "type": 3,
+              "value": 1136
+            }
+          ],
+          "comments": [],
+          "delete_reason": 0,
+          "description": null,
+          "hsc": null,
+          "ingredients": [],
+          "label_name": null,
+          "line_item_id": 3,
+          "machinecode": 0,
+          "metric": 3,
+          "modifiers": [],
+          "parent_line_item_id": 0,
+          "price": {
+            "addonsprice": 0,
+            "channel_uuid": "105f9856-622f-4074-88d0-b12ffdc398f1",
+            "chargeobject_uuid": "c7c8276a-f515-4916-baa1-bd71b6801c89",
+            "dis_percent": 0,
+            "editedsellingprice": 0,
+            "excl_dis": 0,
+            "excl_discounted_price_per_qty": 22727,
+            "excl_item_dis_amt": 0,
+            "excl_price_per_qty": 22727,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 0,
+            "inc_price_per_qty": 25000,
+            "inc_share_dis_amt": 0,
+            "isEdited": false,
+            "mrp": 0,
+            "sellingprice": 25000,
+            "taxobject_uuid": "7792487e-d6ab-4a40-871f-4fd86c988de7",
+            "total_excl_charge_per_qty": 2273,
+            "totalprice": 27500
+          },
+          "product_code": "gobi001",
+          "product_name": "Gobi manchurian(Itax+Echarge)",
+          "properties": [],
+          "qty": 1000,
+          "return_qty": 0,
+          "sku": "000061LYYRB00",
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": 1136
+            },
+            {
+              "type": 8,
+              "value": 1136
+            }
+          ],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "Gobi manchurian(Itax+Echarge)"
+        }
+      ],
+      "kots": [
+        {
+          "createdAt": 1544598006,
+          "emp_uuid": "e03ec039-44b5-488a-b51f-1928553afe3f",
+          "items": [
+            {
+              "delete_reason": 0,
+              "item_schedules": [
+                {
+                  "created_at": 0,
+                  "elapse_at": 0,
+                  "qty": 0,
+                  "schedule_status": 0,
+                  "schedule_type": 0
+                }
+              ],
+              "line_item_id": 1,
+              "main_status": 0,
+              "qty": 0,
+              "reason": "",
+              "sub_status": 0
+            },
+            {
+              "delete_reason": 0,
+              "item_schedules": [
+                {
+                  "created_at": 0,
+                  "elapse_at": 0,
+                  "qty": 0,
+                  "schedule_status": 0,
+                  "schedule_type": 0
+                }
+              ],
+              "line_item_id": 2,
+              "main_status": 0,
+              "qty": 0,
+              "reason": "",
+              "sub_status": 0
+            },
+            {
+              "delete_reason": 0,
+              "item_schedules": [
+                {
+                  "created_at": 0,
+                  "elapse_at": 0,
+                  "qty": 0,
+                  "schedule_status": 0,
+                  "schedule_type": 0
+                }
+              ],
+              "line_item_id": 3,
+              "main_status": 0,
+              "qty": 0,
+              "reason": "",
+              "sub_status": 0
+            }
+          ],
+          "kot_device_id": 730071615,
+          "kot_id": 0,
+          "kot_prefix": "fjvvbjddfh",
+          "logs": null,
+          "main_status": 1,
+          "print_count": 0,
+          "sub_status": 1
+        },
+        {
+          "createdAt": 1544598030,
+          "emp_uuid": "e03ec039-44b5-488a-b51f-1928553afe3f",
+          "items": [
+            {
+              "delete_reason": 0,
+              "item_schedules": [],
+              "line_item_id": 1,
+              "main_status": 1,
+              "qty": 1000,
+              "reason": "",
+              "sub_status": 1
+            },
+            {
+              "delete_reason": 0,
+              "item_schedules": [],
+              "line_item_id": 2,
+              "main_status": 1,
+              "qty": 1000,
+              "reason": "",
+              "sub_status": 1
+            },
+            {
+              "delete_reason": 0,
+              "item_schedules": [],
+              "line_item_id": 3,
+              "main_status": 1,
+              "qty": 1000,
+              "reason": "",
+              "sub_status": 1
+            }
+          ],
+          "kot_device_id": 730071615,
+          "kot_id": 1,
+          "kot_prefix": "fjvvbjddfh",
+          "logs": null,
+          "main_status": 1,
+          "print_count": 0,
+          "sub_status": 1
+        }
+      ],
+      "loyalty_partner_uuid": null,
+      "modifiedat": 1544598049,
+      "no_service_charge": false,
+      "online_transaction_id": 0,
+      "orderid": 642,
+      "otp": null,
+      "owner_device_id": 730071615,
+      "parent_uuid": null,
+      "partner_checkout": null,
+      "partner_ref_number": null,
+      "partner_uuid": "6a5b799f-35a4-43a7-a785-c3c7e39ebadf",
+      "payments": [
+        {
+          "amount": 58400,
+          "card_num": "",
+          "checkout_uuid": null,
+          "conversion_factor": 10000,
+          "coupon_type": 0,
+          "createdat": 1544598041,
+          "currency": "INR",
+          "device_id": 730071615,
+          "edited_emp_uuid": null,
+          "email": null,
+          "method": 1,
+          "mode": 1,
+          "modifiedat": 1544598041,
+          "parent_amount": 0,
+          "parent_uuid": null,
+          "payment_init_uuid": null,
+          "payment_system_connected": false,
+          "phone_number": null,
+          "ref_id": "",
+          "reference_id": null,
+          "status": 4,
+          "trnx_reference": null,
+          "trnx_uuid": null,
+          "type": 1,
+          "uuid": "65e39f4b-534b-49f4-83c9-4ceb6b487772"
+        },
+        {
+          "amount": 9,
+          "card_num": "",
+          "checkout_uuid": null,
+          "conversion_factor": 10000,
+          "coupon_type": 0,
+          "createdat": 1544598049,
+          "currency": "INR",
+          "device_id": 730071615,
+          "edited_emp_uuid": null,
+          "email": null,
+          "method": 1,
+          "mode": 5,
+          "modifiedat": 1544598049,
+          "parent_amount": 0,
+          "parent_uuid": null,
+          "payment_init_uuid": null,
+          "payment_system_connected": false,
+          "phone_number": null,
+          "ref_id": "",
+          "reference_id": null,
+          "status": 4,
+          "trnx_reference": null,
+          "trnx_uuid": null,
+          "type": 1,
+          "uuid": "8cb434dd-b4ea-4213-bc99-5c8c7ea2bfe2"
+        }
+      ],
+      "printcount": 1,
+      "refund_reason": 0,
+      "schedules": [],
+      "splitspec": null,
+      "status": 7,
+      "summary": {
+        "chargesplit": [
+          {
+            "is_exclusive": false,
+            "taxsplit": null,
+            "type": 1,
+            "value": 2424
+          },
+          {
+            "is_exclusive": false,
+            "taxsplit": null,
+            "type": 3,
+            "value": 2424
+          }
+        ],
+        "chargetaxsplit": null,
+        "comment": null,
+        "discountsplit": [],
+        "exclusiveChargesplit": [
+          {
+            "is_exclusive": true,
+            "taxsplit": null,
+            "type": 1,
+            "value": 1136
+          },
+          {
+            "is_exclusive": true,
+            "taxsplit": null,
+            "type": 3,
+            "value": 1136
+          }
+        ],
+        "exclusiveTaxsplit": [
+          {
+            "is_exclusive": true,
+            "type": 7,
+            "value": 568
+          },
+          {
+            "is_exclusive": true,
+            "type": 8,
+            "value": 568
+          }
+        ],
+        "grand_total": 58409,
+        "number_of_items": 3000,
+        "pending_items": 0,
+        "sub_total": 55000,
+        "taxsplit": [
+          {
+            "is_exclusive": false,
+            "type": 7,
+            "value": 2538
+          },
+          {
+            "is_exclusive": false,
+            "type": 8,
+            "value": 2538
+          }
+        ],
+        "total_charges": 2273,
+        "total_discounts": 0,
+        "total_exclu_discounts": 0,
+        "total_order_charge_n_tax": 0,
+        "total_order_exclu_charge": 0,
+        "total_tax": 1136
+      },
+      "tables": [
+        {
+          "guest_count": 0,
+          "is_active": true,
+          "merged_name": null,
+          "name": "Table2",
+          "status": 0,
+          "id": 56
+        }
+      ],
+      "token_number": 0,
+      "type": 1,
+      "uuid": "9d13d0cf-4275-42d0-9838-489383b931e2"
+    },
+    {
+      "channel_uuid": "105f9856-622f-4074-88d0-b12ffdc398f1",
+      "charge_uuid": null,
+      "chargesplit": [],
+      "comments": [],
+      "createdat": 1544598101,
+      "currency": "INR",
+      "customers": [],
+      "details": {
+        "chargedetails": [
+          {
+            "details": [
+              {
+                "inclusive": true,
+                "metric": 1,
+                "name": "packaging",
+                "scaling_factor": 10000,
+                "tax_uuid": "920ee6bc-618b-435f-9f76-b6b997292433",
+                "type": 1,
+                "value": 500
+              },
+              {
+                "inclusive": true,
+                "metric": 1,
+                "name": "service",
+                "scaling_factor": 10000,
+                "tax_uuid": "920ee6bc-618b-435f-9f76-b6b997292433",
+                "type": 3,
+                "value": 500
+              }
+            ],
+            "name": "Icharge",
+            "uuid": "32880953-a83c-4f59-b7a8-519a0efe5236"
+          }
+        ],
+        "ruledetails": [],
+        "taxdetails": [
+          {
+            "details": [
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "CGST",
+                "scaling_factor": 10000,
+                "type": 8,
+                "value": 500
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "IGST",
+                "scaling_factor": 10000,
+                "type": 9,
+                "value": 1000
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "SGST",
+                "scaling_factor": 10000,
+                "type": 7,
+                "value": 500
+              }
+            ],
+            "name": "ETax",
+            "uuid": "d68bd69a-2c6a-4898-ae62-5afcc8f47cfb"
+          },
+          {
+            "details": [],
+            "name": "Tax0",
+            "uuid": "920ee6bc-618b-435f-9f76-b6b997292433"
+          }
+        ]
+      },
+      "device_id": 730071615,
+      "discard_reason": 0,
+      "discounts": [],
+      "employees": [
+        {
+          "name": "Anuj",
+          "rank": 0,
+          "uuid": "e03ec039-44b5-488a-b51f-1928553afe3f"
+        }
+      ],
+      "inter_state": false,
+      "items": [
+        {
+          "chargesplit": [
+            {
+              "taxsplit": [],
+              "type": 1,
+              "value": -455
+            },
+            {
+              "taxsplit": [],
+              "type": 3,
+              "value": -455
+            }
+          ],
+          "comments": [],
+          "delete_reason": 6163,
+          "description": null,
+          "hsc": null,
+          "ingredients": [],
+          "label_name": null,
+          "line_item_id": 4,
+          "machinecode": 30,
+          "metric": 3,
+          "modifiers": [],
+          "parent_line_item_id": 2,
+          "price": {
+            "addonsprice": 0,
+            "channel_uuid": "105f9856-622f-4074-88d0-b12ffdc398f1",
+            "chargeobject_uuid": "32880953-a83c-4f59-b7a8-519a0efe5236",
+            "dis_percent": 0,
+            "editedsellingprice": 0,
+            "excl_dis": 0,
+            "excl_discounted_price_per_qty": 9091,
+            "excl_item_dis_amt": 0,
+            "excl_price_per_qty": 9091,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 0,
+            "inc_price_per_qty": 10000,
+            "inc_share_dis_amt": 0,
+            "isEdited": false,
+            "mrp": 0,
+            "sellingprice": 10000,
+            "taxobject_uuid": "d68bd69a-2c6a-4898-ae62-5afcc8f47cfb",
+            "total_excl_charge_per_qty": 909,
+            "totalprice": -10909
+          },
+          "product_code": "EE01",
+          "product_name": "paneer tikka(ETax+Icharge)",
+          "properties": [],
+          "qty": -1000,
+          "return_qty": 0,
+          "sku": "00006B34UG600",
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": -455
+            },
+            {
+              "type": 8,
+              "value": -455
+            }
+          ],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "paneer tikka(ETax+Icharge)"
+        }
+      ],
+      "kots": [],
+      "loyalty_partner_uuid": null,
+      "modifiedat": 1544598168,
+      "no_service_charge": false,
+      "online_transaction_id": 0,
+      "orderid": 643,
+      "otp": null,
+      "owner_device_id": 730071615,
+      "parent_uuid": "9d13d0cf-4275-42d0-9838-489383b931e2",
+      "partner_checkout": null,
+      "partner_ref_number": null,
+      "partner_uuid": "6a5b799f-35a4-43a7-a785-c3c7e39ebadf",
+      "payments": [
+        {
+          "amount": 10900,
+          "card_num": "",
+          "checkout_uuid": null,
+          "conversion_factor": 10000,
+          "coupon_type": 0,
+          "createdat": 1544598160,
+          "currency": "INR",
+          "device_id": 730071615,
+          "edited_emp_uuid": null,
+          "email": null,
+          "method": 1,
+          "mode": 1,
+          "modifiedat": 1544598160,
+          "parent_amount": 0,
+          "parent_uuid": null,
+          "payment_init_uuid": null,
+          "payment_system_connected": false,
+          "phone_number": null,
+          "ref_id": "",
+          "reference_id": null,
+          "status": 4,
+          "trnx_reference": null,
+          "trnx_uuid": null,
+          "type": 2,
+          "uuid": "d336a2fa-0f43-4dff-984a-30ed90da0b7c"
+        },
+        {
+          "amount": 9,
+          "card_num": "",
+          "checkout_uuid": null,
+          "conversion_factor": 10000,
+          "coupon_type": 0,
+          "createdat": 1544598168,
+          "currency": "INR",
+          "device_id": 730071615,
+          "edited_emp_uuid": null,
+          "email": null,
+          "method": 1,
+          "mode": 5,
+          "modifiedat": 1544598168,
+          "parent_amount": 0,
+          "parent_uuid": null,
+          "payment_init_uuid": null,
+          "payment_system_connected": false,
+          "phone_number": null,
+          "ref_id": "",
+          "reference_id": null,
+          "status": 4,
+          "trnx_reference": null,
+          "trnx_uuid": null,
+          "type": 2,
+          "uuid": "4b60e4da-23ac-4d5c-90c1-641db029accd"
+        }
+      ],
+      "printcount": 0,
+      "refund_reason": 6162,
+      "schedules": [],
+      "splitspec": null,
+      "status": 7,
+      "summary": {
+        "chargesplit": [
+          {
+            "is_exclusive": false,
+            "taxsplit": null,
+            "type": 1,
+            "value": -455
+          },
+          {
+            "is_exclusive": false,
+            "taxsplit": null,
+            "type": 3,
+            "value": -455
+          }
+        ],
+        "chargetaxsplit": null,
+        "comment": null,
+        "discountsplit": [],
+        "exclusiveChargesplit": [],
+        "exclusiveTaxsplit": [
+          {
+            "is_exclusive": true,
+            "type": 7,
+            "value": -455
+          },
+          {
+            "is_exclusive": true,
+            "type": 8,
+            "value": -455
+          }
+        ],
+        "grand_total": -10909,
+        "number_of_items": -1000,
+        "pending_items": 0,
+        "sub_total": -10000,
+        "taxsplit": [
+          {
+            "is_exclusive": false,
+            "type": 7,
+            "value": -455
+          },
+          {
+            "is_exclusive": false,
+            "type": 8,
+            "value": -455
+          }
+        ],
+        "total_charges": 0,
+        "total_discounts": 0,
+        "total_exclu_discounts": 0,
+        "total_order_charge_n_tax": 0,
+        "total_order_exclu_charge": 0,
+        "total_tax": -909
+      },
+      "tables": [],
+      "token_number": 0,
+      "type": 2,
+      "uuid": "11a81dc5-7b6a-48f5-a452-eab2920f3f0d"
+    }
+  ],
+  "prefix": "IREC46",
+  "summary": {
+    "grand_total": 47500,
+    "is_edited": true,
+    "is_refunded": true,
+    "order_count": 2,
+    "payment_balance": 0,
+    "sub_total": 45000,
+    "total_charge": 2273,
+    "total_dis": 0,
+    "total_tax": 227
+  },
+  "type": 2,
+  "uuid": "9733c532-4e2a-4d1f-aa2c-1387e758e53b"
+}

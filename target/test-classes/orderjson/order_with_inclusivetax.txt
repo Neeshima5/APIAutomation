@@ -1,0 +1,313 @@
+{
+  "createdat": 1545044364,
+  "invoiceId": 8,
+  "modifiedat": 1545044413,
+  "orders": [
+    {
+      "channel_uuid": "2953942b-ef8d-4467-8e16-c3bcc23aeca6",
+      "charge_uuid": null,
+      "chargesplit": [],
+      "comments": [],
+      "createdat": 1545044364,
+      "currency": "INR",
+      "customers": [
+        {
+          "customer": {
+            "contact": {
+              "address": [],
+              "email": [],
+              "is_active": false,
+              "is_default": false,
+              "phone": [
+                {
+                  "ext": "",
+                  "is_active": true,
+                  "is_default": true,
+                  "number": "+919632445548",
+                  "type": 0,
+                  "uuid": "3715771e-c141-4e6d-8729-2db2471f98c9"
+                }
+              ],
+              "urls": []
+            },
+            "name": "",
+            "email_enabled": false,
+            "feedback": null,
+            "firstname": "",
+            "gstin": null,
+            "image": null,
+            "is_active": true,
+            "lastname": null,
+            "middlename": null,
+            "rating": 0,
+            "sms_enabled": false,
+            "store_uuid": "8eafb4e0-3086-4ba4-aa8c-63381a6b2459",
+            "title": null,
+            "uuid": "8eafb4e0-3086-4ba4-aa8c-63381a6b2459",
+            "year_of_birth": null
+          },
+          "feedback": "",
+          "rating": 0
+        }
+      ],
+      "details": {
+        "chargedetails": [],
+        "ruledetails": [],
+        "taxdetails": [
+          {
+            "details": [
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "CGST",
+                "scaling_factor": 100,
+                "type": 8,
+                "value": 450
+              },
+              {
+                "children": [],
+                "inclusive": true,
+                "metric": 1,
+                "name": "VAT",
+                "scaling_factor": 100,
+                "type": 10,
+                "value": 200
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "SGST",
+                "scaling_factor": 100,
+                "type": 7,
+                "value": 450
+              },
+              {
+                "children": [],
+                "inclusive": false,
+                "metric": 1,
+                "name": "IGST",
+                "scaling_factor": 100,
+                "type": 9,
+                "value": 900
+              }
+            ],
+            "name": "TaxAutomation3",
+            "uuid": "37b1c5cd-684b-4d87-9410-4c0a0bc5329c"
+          }
+        ]
+      },
+      "device_id": 826925553,
+      "discard_reason": 0,
+      "discounts": [],
+      "employees": [
+        {
+          "name": "Neeshima",
+          "rank": 0,
+          "uuid": "aec758c6-c5ee-4c0b-8c66-ac19c4e62875"
+        }
+      ],
+      "inter_state": false,
+      "items": [
+        {
+          "chargesplit": [],
+          "comments": [],
+          "delete_reason": 0,
+          "description": "Black crepe crop top",
+          "hsc": null,
+          "ingredients": [],
+          "label_name": null,
+          "line_item_id": 1,
+          "machinecode": 0,
+          "metric": 5,
+          "modifiers": [],
+          "parent_line_item_id": 0,
+          "price": {
+            "addonsprice": 0,
+            "channel_uuid": "2953942b-ef8d-4467-8e16-c3bcc23aeca6",
+            "chargeobject_uuid": null,
+            "dis_percent": 0,
+            "editedsellingprice": 0,
+            "excl_dis": 0,
+            "excl_discounted_price_per_qty": 52989,
+            "excl_item_dis_amt": 0,
+            "excl_price_per_qty": 52989,
+            "excl_share_dis_amt": 0,
+            "exclusive_selling_price": 0,
+            "inc_item_dis_amt": 0,
+            "inc_price_per_qty": 53000,
+            "inc_share_dis_amt": 0,
+            "isEdited": false,
+            "mrp": 0,
+            "sellingprice": 53000,
+            "taxobject_uuid": "37b1c5cd-684b-4d87-9410-4c0a0bc5329c",
+            "total_excl_charge_per_qty": 0,
+            "totalprice": 53048
+          },
+          "product_code": "BLCRTP3012",
+          "product_name": "Black crop top",
+          "properties": [],
+          "qty": 1000,
+          "return_qty": 0,
+          "sku": "004UEFXILSA00",
+          "taxsplit": [
+            {
+              "type": 7,
+              "value": 24
+            },
+            {
+              "type": 8,
+              "value": 24
+            },
+            {
+              "type": 10,
+              "value": 11
+            }
+          ],
+          "unit_count": 0,
+          "unit_qty": 0,
+          "user_properties": [],
+          "variant_name": "Black crop top"
+        }
+      ],
+      "kots": [],
+      "loyalty_partner_uuid": null,
+      "modifiedat": 1545044413,
+      "no_service_charge": false,
+      "online_transaction_id": 0,
+      "orderid": 11,
+      "otp": null,
+      "owner_device_id": 826925553,
+      "parent_uuid": null,
+      "partner_checkout": null,
+      "partner_ref_number": null,
+      "partner_uuid": null,
+      "payments": [
+        {
+          "amount": 53000,
+          "card_num": "",
+          "checkout_uuid": null,
+          "conversion_factor": 10000,
+          "coupon_type": 0,
+          "createdat": 1545044411,
+          "currency": "INR",
+          "device_id": 826925553,
+          "edited_emp_uuid": null,
+          "email": null,
+          "method": 1,
+          "mode": 1,
+          "modifiedat": 1545044411,
+          "parent_amount": 0,
+          "parent_uuid": null,
+          "payment_init_uuid": null,
+          "payment_system_connected": false,
+          "phone_number": null,
+          "ref_id": "",
+          "reference_id": null,
+          "status": 4,
+          "trnx_reference": null,
+          "trnx_uuid": null,
+          "type": 1,
+          "uuid": "9ce50fdc-c4ad-4659-8042-e57e795c02c9"
+        },
+        {
+          "amount": 48,
+          "card_num": "",
+          "checkout_uuid": null,
+          "conversion_factor": 10000,
+          "coupon_type": 0,
+          "createdat": 1545044413,
+          "currency": "INR",
+          "device_id": 826925553,
+          "edited_emp_uuid": null,
+          "email": null,
+          "method": 1,
+          "mode": 5,
+          "modifiedat": 1545044413,
+          "parent_amount": 0,
+          "parent_uuid": null,
+          "payment_init_uuid": null,
+          "payment_system_connected": false,
+          "phone_number": null,
+          "ref_id": "",
+          "reference_id": null,
+          "status": 4,
+          "trnx_reference": null,
+          "trnx_uuid": null,
+          "type": 1,
+          "uuid": "d816024a-bedf-4884-91aa-cd2631de4f4f"
+        }
+      ],
+      "printcount": 0,
+      "refund_reason": 0,
+      "schedules": [],
+      "splitspec": null,
+      "status": 7,
+      "summary": {
+        "chargesplit": [],
+        "chargetaxsplit": null,
+        "comment": null,
+        "discountsplit": [],
+        "exclusiveChargesplit": [],
+        "exclusiveTaxsplit": [
+          {
+            "is_exclusive": true,
+            "type": 7,
+            "value": 24
+          },
+          {
+            "is_exclusive": true,
+            "type": 8,
+            "value": 24
+          }
+        ],
+        "grand_total": 53048,
+        "number_of_items": 1000,
+        "pending_items": 0,
+        "sub_total": 53000,
+        "taxsplit": [
+          {
+            "is_exclusive": false,
+            "type": 7,
+            "value": 24
+          },
+          {
+            "is_exclusive": false,
+            "type": 8,
+            "value": 24
+          },
+          {
+            "is_exclusive": false,
+            "type": 10,
+            "value": 11
+          }
+        ],
+        "total_charges": 0,
+        "total_discounts": 0,
+        "total_exclu_discounts": 0,
+        "total_order_charge_n_tax": 0,
+        "total_order_exclu_charge": 0,
+        "total_tax": 48
+      },
+      "tables": [],
+      "token_number": 0,
+      "type": 1,
+      "uuid": "7c43341c-b114-4746-809f-5deb2963c1e1"
+    }
+  ],
+  "prefix": "I7E4B2",
+  "summary": {
+    "grand_total": 53048,
+    "is_edited": false,
+    "is_refunded": false,
+    "order_count": 1,
+    "payment_balance": 0,
+    "sub_total": 53000,
+    "total_charge": 0,
+    "total_dis": 0,
+    "total_tax": 48
+  },
+  "type": 2,
+  "uuid": "fed0498c-1701-4c47-928d-3437c06e7681"
+}

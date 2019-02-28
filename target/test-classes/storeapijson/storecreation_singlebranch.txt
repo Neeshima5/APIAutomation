@@ -1,0 +1,75 @@
+[
+  {
+    "owner": {
+      "phone_number": "9343932742",
+      "login_credentials": {
+        "web_password": "APIAutomation",
+        "device_password": "1234"
+      },
+      "alternate_address": {
+        "city": "",
+        "state": "",
+        "street": "",
+        "addr2": "",
+        "zip": "",
+        "addr1": "",
+        "country": "",
+        "near": ""
+      },
+      "stores": [
+        {
+          "branches": [
+            {
+              "paytm_mall_dummy_pid": "GIU438HKJ00",
+              "paytm_mall_warehouse_id": "GI042MII9090",
+              "address": {
+                "city": "Bangalore",
+                "state": "Karnataka",
+                "street": "Panathur Main Road",
+                "addr2": "Munireddy Layout",
+                "zip": "560103",
+                "addr1": "9, Sanjeev Sadan",
+                "country": "India",
+                "near": "near SBI"
+              },
+              "timezone": "Asia/Kolkata",
+              "phone_numbers": [],
+              "branch_type": "Electronic",
+              "gst": "23AAACB5343E1Z9",
+              "name": "SingleBranch",
+              "paytm_merchant_id": "ptm8301w000",
+              "invoice_header_line_1": "",
+              "paytm_mall_merchant_id": "ptmdwi34h909",
+              "affiliate": "paytm",
+              "invoice_footer_line_1": ""
+            }
+          ],
+          "name": "Store_TestSingleBranch",
+          "address": {
+            "city": "Bangalore",
+            "state": "Karnataka",
+            "street": "Panathur Main Road",
+            "addr2": "Munireddy Layout",
+            "zip": "560103",
+            "addr1": "9, Sanjeev Sadan",
+            "country": "India",
+            "near": "near SBI"
+          }
+        }
+      ],
+      "name": "Owner_TestSingleBranch",
+      "registered_address": {
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "street": "Panathur Main Road",
+        "addr2": "Munireddy Layout",
+        "zip": "560103",
+        "addr1": "9, Sanjeev Sadan",
+        "country": "India",
+        "near": "near SBI"
+      },
+      "email": "test_singlebranch_owner@gmail.com",
+      "gst": "23AAACB5343E1Z9"
+    }
+  }
+]

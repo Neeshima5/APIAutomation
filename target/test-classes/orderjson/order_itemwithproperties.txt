@@ -1,0 +1,290 @@
+{
+  "uuid": "2502d089-a6c6-48c5-a1fb-86b5653e7d7f",
+  "invoiceId": 1,
+  "prefix": "I6YS6J",
+  "createdat": 1543835871,
+  "modifiedat": 1543835942,
+  "type": 2,
+  "summary": {
+    "order_count": 1,
+    "is_refunded": false,
+    "is_edited": false,
+    "sub_total": 450000,
+    "total_tax": 0,
+    "total_charge": 0,
+    "total_dis": 0,
+    "grand_total": 450000,
+    "payment_balance": 0
+  },
+  "orders": [
+    {
+      "uuid": "646a3c43-e3a5-4ad9-8120-627e5497facf",
+      "orderid": 1,
+      "device_id": 1424831758,
+      "owner_device_id": 1424831758,
+      "no_service_charge": false,
+      "parent_uuid": null,
+      "partner_ref_number": null,
+      "otp": null,
+      "online_transaction_id": 0,
+      "token_number": 0,
+      "currency": "INR",
+      "type": 1,
+      "printcount": 0,
+      "createdat": 1543835871,
+      "modifiedat": 1543835942,
+      "channel_uuid": "07703ee8-8963-4b7a-9081-dfa5994b4e6f",
+      "charge_uuid": null,
+      "partner_uuid": "c44288f2-e98b-47e0-b3c9-4be9ceb7f742",
+      "loyalty_partner_uuid": null,
+      "status": 7,
+      "discard_reason": 0,
+      "refund_reason": 0,
+      "details": {
+        "taxdetails": [
+          {
+            "uuid": "920ee6bc-618b-435f-9f76-b6b997292433",
+            "name": "Tax0",
+            "details": []
+          }
+        ],
+        "ruledetails": [],
+        "chargedetails": []
+      },
+      "discounts": [],
+      "summary": {
+        "sub_total": 450000,
+        "total_tax": 0,
+        "total_discounts": 0,
+        "total_exclu_discounts": 0,
+        "total_charges": 0,
+        "total_order_charge_n_tax": 0,
+        "grand_total": 450000,
+        "comment": null,
+        "discountsplit": [],
+        "taxsplit": [],
+        "exclusiveTaxsplit": [],
+        "chargesplit": [],
+        "chargetaxsplit": null,
+        "exclusiveChargesplit": [],
+        "number_of_items": 3000,
+        "pending_items": 2
+      },
+      "items": [
+        {
+          "line_item_id": 1,
+          "qty": 2000,
+          "unit_count": 0,
+          "unit_qty": 0,
+          "sku": "00006A8W60501",
+          "hsc": null,
+          "variant_name": "blue cotton shirt small ",
+          "product_name": "Basics shirt",
+          "product_code": "23169",
+          "machinecode": 0,
+          "metric": 5,
+          "delete_reason": 0,
+          "return_qty": 0,
+          "label_name": null,
+          "description": "Full sleeve Basics shirt",
+          "parent_line_item_id": 0,
+          "price": {
+            "channel_uuid": "07703ee8-8963-4b7a-9081-dfa5994b4e6f",
+            "sellingprice": 150000,
+            "exclusive_selling_price": 0,
+            "taxobject_uuid": "920ee6bc-618b-435f-9f76-b6b997292433",
+            "chargeobject_uuid": null,
+            "isEdited": false,
+            "editedsellingprice": 0,
+            "totalprice": 300000,
+            "addonsprice": 0,
+            "mrp": 0,
+            "inc_price_per_qty": 150000,
+            "excl_price_per_qty": 150000,
+            "inc_share_dis_amt": 0,
+            "inc_item_dis_amt": 0,
+            "dis_percent": 0,
+            "excl_dis": 0,
+            "excl_share_dis_amt": 0,
+            "excl_item_dis_amt": 0
+          },
+          "taxsplit": [],
+          "chargesplit": [],
+          "ingredients": [],
+          "properties": [
+            {
+              "type": 0,
+              "key": "colour",
+              "value": "blue"
+            },
+            {
+              "type": 0,
+              "key": "Size",
+              "value": "Small"
+            },
+            {
+              "type": 0,
+              "key": "material",
+              "value": "cotton"
+            }
+          ],
+          "user_properties": [],
+          "modifiers": [],
+          "comments": []
+        },
+        {
+          "line_item_id": 2,
+          "qty": 1000,
+          "unit_count": 0,
+          "unit_qty": 0,
+          "sku": "00006A8W60503",
+          "hsc": null,
+          "variant_name": "red cotton large shirt",
+          "product_name": "Basics shirt",
+          "product_code": "23169",
+          "machinecode": 0,
+          "metric": 5,
+          "delete_reason": 0,
+          "return_qty": 0,
+          "label_name": null,
+          "description": "Full sleeve Basics shirt",
+          "parent_line_item_id": 0,
+          "price": {
+            "channel_uuid": "07703ee8-8963-4b7a-9081-dfa5994b4e6f",
+            "sellingprice": 150000,
+            "exclusive_selling_price": 0,
+            "taxobject_uuid": "920ee6bc-618b-435f-9f76-b6b997292433",
+            "chargeobject_uuid": null,
+            "isEdited": false,
+            "editedsellingprice": 0,
+            "totalprice": 150000,
+            "addonsprice": 0,
+            "mrp": 0,
+            "inc_price_per_qty": 150000,
+            "excl_price_per_qty": 150000,
+            "inc_share_dis_amt": 0,
+            "inc_item_dis_amt": 0,
+            "dis_percent": 0,
+            "excl_dis": 0,
+            "excl_share_dis_amt": 0,
+            "excl_item_dis_amt": 0
+          },
+          "taxsplit": [],
+          "chargesplit": [],
+          "ingredients": [],
+          "properties": [
+            {
+              "type": 0,
+              "key": "colour",
+              "value": "red"
+            },
+            {
+              "type": 0,
+              "key": "Size",
+              "value": "Large"
+            },
+            {
+              "type": 0,
+              "key": "material",
+              "value": "cotton"
+            }
+          ],
+          "user_properties": [],
+          "modifiers": [],
+          "comments": []
+        }
+      ],
+      "payments": [
+        {
+          "uuid": "771dfb8b-0cd0-4ea4-85fa-880d3c79db0f",
+          "device_id": 1424831758,
+          "status": 4,
+          "mode": 1,
+          "method": 1,
+          "type": 1,
+          "amount": 450000,
+          "parent_amount": 0,
+          "parent_uuid": null,
+          "card_num": "",
+          "ref_id": "",
+          "coupon_type": 0,
+          "createdat": 1543835937,
+          "modifiedat": 1543835937,
+          "conversion_factor": 10000,
+          "currency": "INR",
+          "reference_id": null,
+          "edited_emp_uuid": null,
+          "payment_init_uuid": null,
+          "email": null,
+          "phone_number": null,
+          "trnx_reference": null,
+          "trnx_uuid": null,
+          "checkout_uuid": null,
+          "payment_system_connected": false
+        }
+      ],
+      "kots": [
+        {
+          "kot_id": 0,
+          "kot_device_id": 1424831758,
+          "kot_prefix": "neeshimatest1",
+          "main_status": 1,
+          "sub_status": 1,
+          "print_count": 0,
+          "createdAt": 1543835889,
+          "emp_uuid": "e03ec039-44b5-488a-b51f-1928553afe3f",
+          "items": [
+            {
+              "line_item_id": 1,
+              "qty": 2000,
+              "main_status": 0,
+              "sub_status": 0,
+              "reason": "",
+              "delete_reason": 0,
+              "item_schedules": [
+                {
+                  "schedule_type": 6,
+                  "schedule_status": 0,
+                  "qty": 2000,
+                  "created_at": 1543835891,
+                  "elapse_at": 1543835891
+                }
+              ]
+            },
+            {
+              "line_item_id": 2,
+              "qty": 1000,
+              "main_status": 0,
+              "sub_status": 0,
+              "reason": "",
+              "delete_reason": 0,
+              "item_schedules": [
+                {
+                  "schedule_type": 6,
+                  "schedule_status": 0,
+                  "qty": 1000,
+                  "created_at": 1543835894,
+                  "elapse_at": 1543835894
+                }
+              ]
+            }
+          ],
+          "logs": null
+        }
+      ],
+      "customers": [],
+      "tables": [],
+      "employees": [
+        {
+          "uuid": "e03ec039-44b5-488a-b51f-1928553afe3f",
+          "name": "Anuj",
+          "rank": 0
+        }
+      ],
+      "schedules": [],
+      "chargesplit": [],
+      "splitspec": null,
+      "partner_checkout": null
+    }
+  ]
+}

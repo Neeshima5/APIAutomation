@@ -1,0 +1,75 @@
+[
+  {
+    "owner": {
+      "phone_number": "9780889912",
+      "login_credentials": {
+        "web_password": "",
+        "device_password": ""
+      },
+      "alternate_address": {
+        "city": "",
+        "state": "",
+        "street": "",
+        "addr2": "",
+        "zip": "",
+        "addr1": "",
+        "country": "",
+        "near": ""
+      },
+      "stores": [
+        {
+          "branches": [
+            {
+              "paytm_mall_dummy_pid": "",
+              "paytm_mall_warehouse_id": "",
+              "address": {
+                "city": "Bangalore",
+                "state": "Karnataka",
+                "street": "Panathur Main Road",
+                "addr2": "Munireddy Layout",
+                "zip": "560103",
+                "addr1": "9, Sanjeev Sadan",
+                "country": "India",
+                "near": "near SBI"
+              },
+              "timezone": "Asia/Kolkata",
+              "phone_numbers": [],
+              "branch_type": "Books",
+              "gst": "09AAACB5343E1ZZ",
+              "name": "TestBranch_BlankField",
+              "paytm_merchant_id": "",
+              "invoice_header_line_1": "",
+              "paytm_mall_merchant_id": "",
+              "affiliate": "paytm",
+              "invoice_footer_line_1": ""
+            }
+          ],
+          "name": "TestStore_BlankField",
+          "address": {
+            "city": "Bangalore",
+            "state": "Karnataka",
+            "street": "Panathur Main Road",
+            "addr2": "Munireddy Layout",
+            "zip": "560103",
+            "addr1": "9, Sanjeev Sadan",
+            "country": "India",
+            "near": "near SBI"
+          }
+        }
+      ],
+      "name": "TestOwner_BlankField",
+      "registered_address": {
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "street": "Panathur Main Road",
+        "addr2": "Munireddy Layout",
+        "zip": "560103",
+        "addr1": "9, Sanjeev Sadan",
+        "country": "India",
+        "near": "near SBI"
+      },
+      "email": "apiautomation@gmail.com",
+      "gst": "09AAACB5343E1ZZ"
+    }
+  }
+]
