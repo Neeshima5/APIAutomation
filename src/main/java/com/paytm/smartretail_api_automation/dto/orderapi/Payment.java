@@ -30,13 +30,12 @@ public class Payment {
 	private int type;
 	private String uuid;
 
-	public Payment(long amount, double conversion_factor, long createdat, long device_id, int method, int mode,
+	public Payment(long amount, double conversion_factor, long createdat, int method, int mode,
 			long modifiedat, int status, int type, String uuid) {
 		super();
 		this.amount = amount;
 		this.conversion_factor = conversion_factor;
 		this.createdat = createdat;
-		this.device_id = device_id;
 		this.method = method;
 		this.mode = mode;
 		this.modifiedat = modifiedat;

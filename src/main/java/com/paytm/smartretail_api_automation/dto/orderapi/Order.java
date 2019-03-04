@@ -28,7 +28,7 @@ public class Order {
 	private int online_transaction_id = 0;
 	private int orderid;
 	private String otp = null;
-	private long owner_device_id;
+	private long owner_device_id= Constants.DEVICE_ID;
 	private String parent_uuid = null;
 	private String partner_checkout = null;
 	private String partner_ref_number = null;

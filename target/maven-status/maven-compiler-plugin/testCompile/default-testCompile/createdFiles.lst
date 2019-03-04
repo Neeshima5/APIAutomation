@@ -1,4 +1,5 @@
 com/paytm/smartretail_api_automation/TestClass.class
 com/paytm/smartretail_api_automation/storecreationapi/TestStoreCreationApi.class
-com/paytm/smartretail_api_automation/TestOrders.class
+com/paytm/smartretail_api_automation/storecreationapi/TestClass.class
+com/paytm/smartretail_api_automation/TestOrderApi.class
 com/paytm/smartretail_api_automation/storecreationapi/TestAddEditBranch.class

@@ -4,11 +4,11 @@ public class Constants {
 
 	public static final String STORE_USERNAME = "admin@weavedin.com";
 	public static final String STORE_PASSWORD = "weavedindemo76k";
-	public static final String STORE_BRANCH_UUID = "9fc06101-022d-4d4f-8833-b3c73551bfb3";
-	public static final String CHANNEL_UUID = "7d95ec94-69c7-41c9-856a-e0031b2d7cc6";
+	public static final String STORE_BRANCH_UUID = "27966817-f5ce-40b2-ad7f-e528d2af4304";
+	public static final String CHANNEL_UUID = "6c857e37-d30f-4275-90bf-37e4a3142ffc";
 
-	public static final String DEVICE_HW_ID = "4EH80000OP8932YZ";
-	public static final String DEVICE_NAME = "AutomationTest";
+	public static final String DEVICE_HW_ID = "974725642";
+	public static final String DEVICE_NAME = "AutomationTestMobile1";
 	public static final long DEVICE_ID = 826925553;
 
 	public static final String TEST_ORDER_JSON_FILE_PATH = "src/test/resources/orderjson/";

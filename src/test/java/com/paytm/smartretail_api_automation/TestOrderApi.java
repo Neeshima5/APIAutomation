@@ -1,9 +1,9 @@
 package com.paytm.smartretail_api_automation;
 
 import java.io.IOException;
+import java.time.Instant;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -71,7 +71,7 @@ public class TestOrderApi {
 	public static int deviceId;
 	private String token;
 
-//	@BeforeClass
+	@BeforeClass
 	public void init() {
 
 		RestAssured.baseURI = CommonUtil.getEnvironmentPropertyValue("url");
@@ -103,37 +103,37 @@ public class TestOrderApi {
 	public void testOrder_SingleItem() throws IOException {
 
 		// create invoice with single item
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
-		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
+		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "GST 0", "f04c3321-49b9-48aa-87bd-82e39fe5bb48");
 		taxDetails.add(taxDetail);
 		OrderDetails details = new OrderDetails(new ArrayList<>(), new ArrayList<>(), taxDetails);
 		List<Employee> employees = new ArrayList<>();
-		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
+		Employee employee = getEmployee("Syed Yusuf", 0, "e3e5f86c-bbb4-4314-9636-fc73d799b314");
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(10000, 10000, Instant.now().getEpochSecond(), 1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
-		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
+		Price price = new Price(Constants.CHANNEL_UUID, 10000, 10000, 0, 10000, "f04c3321-49b9-48aa-87bd-82e39fe5bb48", 10000);
 		Item item = getItem(new ArrayList<>(), new ArrayList<>(), "TestItem1", new ArrayList<>(), 1, 5,
-				new ArrayList<>(), price, "TST0001", "Test Item 1", new ArrayList<>(), 1000, "004UEFXILSA00",
-				new ArrayList<>(), new ArrayList<>(), "Test Item 1");
+				new ArrayList<>(), price, "ATI_12345", "Api Test Item", new ArrayList<>(), 1000, "000QNMIKUIT00",
+				new ArrayList<>(), new ArrayList<>(), "Api Test Item");
 		items.add(item);
 		OrderSummary orderSummary = getOrderSummary(new ArrayList<>(), null, new ArrayList<>(), new ArrayList<>(),
-				new ArrayList<>(), 53048, 1000, 0, 53000, new ArrayList<>(), 0);
+				new ArrayList<>(), 10000, 1000, 0, 10000, new ArrayList<>(), 0);
 		Order order = getOrder(null, new ArrayList<>(), new ArrayList<>(), createdat, new ArrayList<>(), details,
 				new ArrayList<>(), employees, items, new ArrayList<>(), modifiedat, orderId, deviceId, payments,
 				new ArrayList<>(), Constants.ORDER_STATUS, orderSummary, new ArrayList<>(), Constants.ORDER_TYPE,
 				UUID.randomUUID().toString());
 		orders.add(order);
-		InvoiceSummary invoiceSummary = getInvoiceSummary(53048, 1, 0, 53000, 0, 0, 48);
+		InvoiceSummary invoiceSummary = getInvoiceSummary(10000, 1, 0, 10000, 0, 0, 0);
 		Invoice invoice = getInvoice(createdat, invoiceId, modifiedat, orders, invoicePrefix, invoiceSummary,
 				Constants.INVOICE_TYPE, UUID.randomUUID().toString());
-
+		System.out.println("Invoice details: " +invoice.toString());
 		ObjectMapper mapper = new ObjectMapper();
 		String requestJson = mapper.writeValueAsString(invoice);
 		System.out.println("Invoice : " + requestJson);
@@ -143,7 +143,7 @@ public class TestOrderApi {
 
 	}
 
-	// @Test
+	// //@Test
 	public void testOrder_MultipleItems() throws IOException {
 
 //	   test sample json with multiple items 
@@ -151,13 +151,13 @@ public class TestOrderApi {
 
 	}
 
-	@Test
+	//@Test
 	public void testOrderWithCustomerInfo() throws IOException {
 
 		// create invoice with customer info
 		String invoiceUUID = UUID.randomUUID().toString();
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -173,8 +173,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(), 1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -276,12 +276,12 @@ public class TestOrderApi {
 
 	}
 
-	@Test
+	//@Test
 	public void testOrder_WithoutTaxDetails() throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order without tax details
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -291,8 +291,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(), 1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -343,12 +343,12 @@ public class TestOrderApi {
 		
 	}
 
-	@Test
+	//@Test
 	public void testOrder_With_ExclusiveTax() throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order with exclusive tax
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -358,8 +358,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(),  1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -383,12 +383,12 @@ public class TestOrderApi {
 		System.out.println("Invoice : " + requestJson);
 	}
 
-	@Test
+	//@Test
 	public void testOrder_With_InclusiveTax() throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order with inclusive tax
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -398,8 +398,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(),  1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -423,13 +423,13 @@ public class TestOrderApi {
 		System.out.println("Invoice : " + requestJson);
 	}
 
-	@Test
+	//@Test
 	public void testOrder_With_Inclusive_And_ExclusiveTax()
 			throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order with inclusive and exclusive tax
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -439,8 +439,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(),  1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -464,12 +464,12 @@ public class TestOrderApi {
 		System.out.println("Invoice : " + requestJson);
 	}
 
-	@Test
+	//@Test
 	public void testOrder_Without_Charges() throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order without charges
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -479,8 +479,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(), 1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -504,12 +504,12 @@ public class TestOrderApi {
 		System.out.println("Invoice : " + requestJson);
 	}
 
-	@Test
+	//@Test
 	public void testOrder_With_Multiple_Charges() throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order with multiple charges
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -519,8 +519,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(),  1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -544,12 +544,12 @@ public class TestOrderApi {
 		System.out.println("Invoice : " + requestJson);
 	}
 
-	@Test
+	//@Test
 	public void testOrder_With_ChangeInPaymentMode() throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order with change in payment mode
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -559,8 +559,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(),  1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -584,12 +584,12 @@ public class TestOrderApi {
 		System.out.println("Invoice : " + requestJson);
 	}
 
-	@Test
+	//@Test
 	public void testOrder_Multiple_PaymentModes() throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order with exclusive tax
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -599,8 +599,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(), 1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -625,18 +625,18 @@ public class TestOrderApi {
 	}
 
 	/*
-	 * @Test public void testDiscardedOrder_AfterPayment() {
+	 * //@Test public void testDiscardedOrder_AfterPayment() {
 	 * 
 	 * // test sample json with discarded order after payment
 	 * testOrderJson(TEST_JSON_FILE_PATH + "order_discarded_afterpayment.txt"); }
 	 */
 
-	@Test
+	//@Test
 	public void testOrder_WithFlatDiscount() throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order with flat discount
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -646,8 +646,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(),  1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -671,12 +671,12 @@ public class TestOrderApi {
 		System.out.println("Invoice : " + requestJson);
 	}
 
-	@Test
+	//@Test
 	public void testOrder_WithPercentageDiscount() throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order with percentage discount
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -686,8 +686,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(), 1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -711,13 +711,13 @@ public class TestOrderApi {
 		System.out.println("Invoice : " + requestJson);
 	}
 
-	@Test
+	//@Test
 	public void testOrder_SingleItem_WithFlatDiscount()
 			throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order with single item having flat discount
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -727,8 +727,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(),  1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -752,13 +752,13 @@ public class TestOrderApi {
 		System.out.println("Invoice : " + requestJson);
 	}
 
-	@Test
+	//@Test
 	public void testOrder_SingleItem_WithPercentDiscount()
 			throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order with single item having percentage discount
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -768,8 +768,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(),  1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -793,13 +793,13 @@ public class TestOrderApi {
 		System.out.println("Invoice : " + requestJson);
 	}
 
-	@Test
+	//@Test
 	public void testOrder_MultipleItems_WithFlatDiscount()
 			throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order with multiple items having flat discount
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -809,8 +809,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(),  1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -834,13 +834,13 @@ public class TestOrderApi {
 		System.out.println("Invoice : " + requestJson);
 	}
 
-	@Test
+	//@Test
 	public void testOrder_MultipleItems_WithPercentageDiscount()
 			throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order with multiple items having percentage discount
-		long modifiedat = System.currentTimeMillis();
-		long createdat = System.currentTimeMillis();
+		long modifiedat = Instant.now().getEpochSecond();
+		long createdat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -850,8 +850,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(), 1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -875,52 +875,53 @@ public class TestOrderApi {
 		System.out.println("Invoice : " + requestJson);
 	}
 
-	@Test
+	//@Test
 	public void testOrder_With_CashPayment() throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order with cash as payment mode
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
-		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
+		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "GST 0", "f04c3321-49b9-48aa-87bd-82e39fe5bb48");
 		taxDetails.add(taxDetail);
 		OrderDetails details = new OrderDetails(new ArrayList<>(), new ArrayList<>(), taxDetails);
 		List<Employee> employees = new ArrayList<>();
-		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
+		Employee employee = getEmployee("Syed Yusuf", 0, "e3e5f86c-bbb4-4314-9636-fc73d799b314");
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(10000, 10000, Instant.now().getEpochSecond(), 1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
-		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
+		Price price = new Price(Constants.CHANNEL_UUID, 10000, 10000, 0, 10000, "f04c3321-49b9-48aa-87bd-82e39fe5bb48", 10000);
 		Item item = getItem(new ArrayList<>(), new ArrayList<>(), "TestItem1", new ArrayList<>(), 1, 5,
-				new ArrayList<>(), price, "TST0001", "Test Item 1", new ArrayList<>(), 1000, "004UEFXILSA00",
-				new ArrayList<>(), new ArrayList<>(), "Test Item 1");
+				new ArrayList<>(), price, "ATI_12345", "Api Test Item", new ArrayList<>(), 1000, "000QNMIKUIT00",
+				new ArrayList<>(), new ArrayList<>(), "Api Test Item");
 		items.add(item);
 		OrderSummary orderSummary = getOrderSummary(new ArrayList<>(), null, new ArrayList<>(), new ArrayList<>(),
-				new ArrayList<>(), 53048, 1000, 0, 53000, new ArrayList<>(), 0);
+				new ArrayList<>(), 10000, 1000, 0, 10000, new ArrayList<>(), 0);
 		Order order = getOrder(null, new ArrayList<>(), new ArrayList<>(), createdat, new ArrayList<>(), details,
 				new ArrayList<>(), employees, items, new ArrayList<>(), modifiedat, orderId, deviceId, payments,
 				new ArrayList<>(), Constants.ORDER_STATUS, orderSummary, new ArrayList<>(), Constants.ORDER_TYPE,
 				UUID.randomUUID().toString());
 		orders.add(order);
-		InvoiceSummary invoiceSummary = getInvoiceSummary(53048, 1, 0, 53000, 0, 0, 48);
+		InvoiceSummary invoiceSummary = getInvoiceSummary(10000, 1, 0, 10000, 0, 0, 0);
 		Invoice invoice = getInvoice(createdat, invoiceId, modifiedat, orders, invoicePrefix, invoiceSummary,
 				Constants.INVOICE_TYPE, UUID.randomUUID().toString());
-
+		System.out.println("Invoice details: " +invoice.toString());
 		ObjectMapper mapper = new ObjectMapper();
 		String requestJson = mapper.writeValueAsString(invoice);
 		System.out.println("Invoice : " + requestJson);
+
 	}
 
-	@Test
+	//@Test
 	public void testOrder_With_CardPayment() throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order with card as payment mode
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -930,8 +931,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(),  1, 2,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -955,12 +956,12 @@ public class TestOrderApi {
 		System.out.println("Invoice : " + requestJson);
 	}
 
-	@Test
+	//@Test
 	public void testOrder_With_CouponPayment() throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order with coupon as payment mode
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -970,8 +971,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(),  1, 6,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -995,12 +996,12 @@ public class TestOrderApi {
 		System.out.println("Invoice : " + requestJson);
 	}
 
-	@Test
+	//@Test
 	public void testOrder_With_CreditPayment() throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order with credit as payment mode
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -1010,8 +1011,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(),  1, 4,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -1035,12 +1036,12 @@ public class TestOrderApi {
 		System.out.println("Invoice : " + requestJson);
 	}
 
-	@Test
+	//@Test
 	public void testOrder_SingleItemRefund() throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order and do single item refund
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -1050,8 +1051,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(),  1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -1075,12 +1076,12 @@ public class TestOrderApi {
 		System.out.println("Invoice : " + requestJson);
 	}
 
-	@Test
+	//@Test
 	public void testOrder_AllItemRefund() throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order and do all item refund
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -1090,8 +1091,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(),  1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -1115,12 +1116,12 @@ public class TestOrderApi {
 		System.out.println("Invoice : " + requestJson);
 	}
 
-	@Test
+	//@Test
 	public void testOrder_ItemPriceEdited() throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order with price of item edited
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -1130,11 +1131,13 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(),  1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
-		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
+		Price price = new Price(Constants.CHANNEL_UUID, 53000, 53000, 0, 60000, null, 53000);
+		price.setEditedsellingprice(50000);
+		price.setEdited(true);
 		Item item = getItem(new ArrayList<>(), new ArrayList<>(), "TestItem1", new ArrayList<>(), 1, 5,
 				new ArrayList<>(), price, "TST0001", "Test Item 1", new ArrayList<>(), 1000, "004UEFXILSA00",
 				new ArrayList<>(), new ArrayList<>(), "Test Item 1");
@@ -1155,12 +1158,12 @@ public class TestOrderApi {
 		System.out.println("Invoice : " + requestJson);
 	}
 
-	@Test
+	//@Test
 	public void testOrder_ItemsWithAddons() throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order with items having addons
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -1170,8 +1173,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(), 1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -1196,12 +1199,12 @@ public class TestOrderApi {
 
 	}
 
-	@Test
+	//@Test
 	public void testOrder_ItemsWithVariants() throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order with items having addons
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -1211,8 +1214,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(),  1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -1237,12 +1240,12 @@ public class TestOrderApi {
 
 	}
 
-	@Test
+	//@Test
 	public void testOrder_ItemWithProperties() throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order with items having properties
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -1252,8 +1255,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(), 1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -1278,12 +1281,12 @@ public class TestOrderApi {
 
 	}
 
-	@Test
+	//@Test
 	public void testOrder_Comments_ItemLevel() throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order with item level comments
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -1293,8 +1296,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(),  1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -1318,12 +1321,12 @@ public class TestOrderApi {
 		System.out.println("Invoice : " + requestJson);
 	}
 
-	@Test
+	//@Test
 	public void testOrder_Comments_OrderLevel() throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order with order level comments
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -1333,8 +1336,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(),  1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -1358,12 +1361,12 @@ public class TestOrderApi {
 		System.out.println("Invoice : " + requestJson);
 	}
 
-	@Test
+	//@Test
 	public void testOrderWithDeletedItems() throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order with deleted items
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -1373,8 +1376,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(),  1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -1398,12 +1401,12 @@ public class TestOrderApi {
 		System.out.println("Invoice : " + requestJson);
 	}
 
-	@Test
+	//@Test
 	public void testOrder_BalancePaidAsCashToCustomer()
 			throws JsonGenerationException, JsonMappingException, IOException {
 		// create order with balance paid as cash to customer
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -1413,8 +1416,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(),  1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -1438,13 +1441,13 @@ public class TestOrderApi {
 		System.out.println("Invoice : " + requestJson);
 	}
 
-	@Test
+	//@Test
 	public void testOrder_BalancePaidAsCreditToCustomer()
 			throws JsonGenerationException, JsonMappingException, IOException {
 
 		// create order with balance paid as credit to customer
-		long createdat = System.currentTimeMillis();
-		long modifiedat = System.currentTimeMillis();
+		long createdat = Instant.now().getEpochSecond();
+		long modifiedat = Instant.now().getEpochSecond();
 		List<Order> orders = new ArrayList<>();
 		List<TaxDetails> taxDetails = new ArrayList<>();
 		TaxDetails taxDetail = new TaxDetails(new ArrayList<>(), "Tax0", null);
@@ -1454,8 +1457,8 @@ public class TestOrderApi {
 		Employee employee = getEmployee("APIAutomation", 0, UUID.randomUUID().toString());
 		employees.add(employee);
 		List<Payment> payments = new ArrayList<>();
-		Payment payment = getPayment(53000, 10000, System.currentTimeMillis(), deviceId, 1, 1,
-				System.currentTimeMillis(), 4, 1, UUID.randomUUID().toString());
+		Payment payment = getPayment(53000, 10000, Instant.now().getEpochSecond(),  1, 1,
+				Instant.now().getEpochSecond(), 4, 1, UUID.randomUUID().toString());
 		payments.add(payment);
 		List<Item> items = new ArrayList<>();
 		Price price = new Price(Constants.CHANNEL_UUID, 52989, 53000, 0, 53000, null, 7600);
@@ -1478,6 +1481,7 @@ public class TestOrderApi {
 		String requestJson = mapper.writeValueAsString(invoice);
 		System.out.println("Invoice : " + requestJson);
 	}
+	
 
 	private void testOrderJson(String jsonFileName) {
 
@@ -1641,10 +1645,10 @@ public class TestOrderApi {
 		return order;
 	}
 
-	private Payment getPayment(long amount, double conversion_factor, long createdat, long device_id, int method,
+	private Payment getPayment(long amount, double conversion_factor, long createdat,  int method,
 			int mode, long modifiedat, int status, int type, String uuid) {
 
-		Payment payment = new Payment(amount, conversion_factor, createdat, device_id, method, mode, modifiedat, status,
+		Payment payment = new Payment(amount, conversion_factor, createdat, method, mode, modifiedat, status,
 				type, uuid);
 		return payment;
 	}

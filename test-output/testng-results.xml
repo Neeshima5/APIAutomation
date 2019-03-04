@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="441" started-at="2019-02-26T10:31:33Z" finished-at="2019-02-26T10:31:34Z">
+  <suite started-at="2019-03-04T09:35:45Z" name="Default suite" finished-at="2019-03-04T09:35:50Z" duration-ms="5012">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="441" started-at="2019-02-26T10:31:33Z" finished-at="2019-02-26T10:31:34Z">
+    <test started-at="2019-03-04T09:35:45Z" name="Default test" finished-at="2019-03-04T09:35:50Z" duration-ms="5012">
       <class name="com.paytm.smartretail_api_automation.TestOrderApi">
-        <test-method status="PASS" signature="testOrderWithCustomerInfo()[pri:0, instance:com.paytm.smartretail_api_automation.TestOrderApi@7085bdee]" name="testOrderWithCustomerInfo" duration-ms="390" started-at="2019-02-26T10:31:34Z" finished-at="2019-02-26T10:31:34Z">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.paytm.smartretail_api_automation.TestOrderApi@4ef37659]" started-at="2019-03-04T09:35:45Z" name="init" finished-at="2019-03-04T09:35:50Z" duration-ms="4671" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testOrderWithCustomerInfo -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.paytm.smartretail_api_automation.TestOrderApi@7085bdee]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-02-26T10:31:34Z" finished-at="2019-02-26T10:31:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="testOrder_SingleItem()[pri:0, instance:com.paytm.smartretail_api_automation.TestOrderApi@7085bdee]" name="testOrder_SingleItem" duration-ms="27" started-at="2019-02-26T10:31:34Z" finished-at="2019-02-26T10:31:34Z">
+        </test-method> <!-- init -->
+        <test-method signature="testOrder_SingleItem()[pri:0, instance:com.paytm.smartretail_api_automation.TestOrderApi@4ef37659]" started-at="2019-03-04T09:35:50Z" name="testOrder_SingleItem" finished-at="2019-03-04T09:35:50Z" duration-ms="316" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOrder_SingleItem -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.paytm.smartretail_api_automation.TestOrderApi@7085bdee]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-02-26T10:31:34Z" finished-at="2019-02-26T10:31:34Z">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.paytm.smartretail_api_automation.TestOrderApi@4ef37659]" started-at="2019-03-04T09:35:50Z" name="afterMethod" finished-at="2019-03-04T09:35:50Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

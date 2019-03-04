@@ -91,4 +91,12 @@ public class Invoice {
 		this.uuid = uuid;
 	}
 
+	@Override
+	public String toString() {
+		return "Invoice [createdat=" + createdat + ", invoiceId=" + invoiceId + ", modifiedat=" + modifiedat
+				+ ", orders=" + orders + ", prefix=" + prefix + ", summary=" + summary + ", type=" + type + ", uuid="
+				+ uuid + "]";
+	}
+	
+
 }
